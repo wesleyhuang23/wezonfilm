@@ -44,7 +44,7 @@ a {
 }
 
 .wrapper {
-  height: auto;
+  height: 1198px;
   margin: 40px;
   background-color: #AFAB97;
   padding: 15px;
@@ -81,7 +81,7 @@ a {
 
 .trailer{
   height: 400px;
-  width: 720px;
+  width: 970px;
   padding-left: 40px;
   /*border: 1px solid green;*/
   display: flex;
@@ -90,10 +90,56 @@ a {
 
 iframe{
   height: auto;
-  width: 100vw;
+  width: 970px;
 }
 
 footer {
   background-color: #F1C53C;
   height: 10vh;
+}
+
+@media (max-width: 1425px){
+  .trailer{
+    width: 800px;
+  }
+  iframe{
+    width: 800px;
+  }
+}
+
+@media (max-width: 1200px){
+  .trailer{
+    width: 700px;
+  }
+  iframe{
+    width: 700px;
+  }
+}
+}
+
+@media (max-width: 1195px){
+  .trailer{
+    width: 600px;
+  }
+  iframe{
+    width: 600px;
+  }
+}
+
+@media (max-width: 1155px){
+  .trailer{
+    width: 550px;
+  }
+  iframe{
+    width: 550px;
+  }
+}
+
+@media (max-width: 1055px){
+  .trailer{
+    width: 500px;
+  }
+  iframe{
+    width: 500px;
+  }
 }
