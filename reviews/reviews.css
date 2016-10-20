@@ -29,6 +29,11 @@ p{
   font-weight: lighter;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .reviews {
   text-align: center;
   background-color: rgba(48,48,47,0.05);
@@ -70,6 +75,7 @@ p{
 }
 
 .review h3 {
+  font-size: 35px;
   font-weight: 500;
 }
 
@@ -85,4 +91,9 @@ p{
 iframe{
   height: auto;
   width: 100vw;
+}
+
+footer {
+  background-color: #F1C53C;
+  height: 10vh;
 }
