@@ -1,0 +1,38 @@
+*{
+  font-family:helvetica;
+}
+body {
+  background-color: #F8F8F6;
+  margin: 0;
+}
+
+header{
+  background-color: yellow;
+  text-align: center;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1{
+  margin: 0;
+}
+
+h2{
+  margin: 0;
+}
+
+.reviews {
+  text-align: center;
+  background-color: rgba(48,48,47,0.05);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5vh;
+}
+
+.posters img{
+  height:300px;
+  margin: 10px;
+}
