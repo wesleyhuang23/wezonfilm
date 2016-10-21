@@ -54,5 +54,10 @@ h3{
 
 .about-info{
   height: 50vh;
+  background-color: #AFAB97;
+}
+
+footer {
   background-color: #F1C53C;
+  height: 10vh;
 }
