@@ -82,6 +82,11 @@ h3{
   text-align: center;
 }
 
+.nav-items p:hover{
+  color: red;
+  text-decoration: underline;
+}
+
 .reviews {
   text-align: center;
   background-color: rgba(48,48,47,0.05);
@@ -93,11 +98,17 @@ h3{
 
 .posters{
   height: auto;
+  text-align: center;
 }
 
 .posters img{
   height:370px;
   margin: 10px;
+  padding: 7px;
+}
+
+.posters img:hover{
+  background-color: #AFAB97;
 }
 
 .about {
