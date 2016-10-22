@@ -150,10 +150,6 @@ main{
   justify-content: center;
 }
 
-input[placeholder]{
-  font-style: italic;
-}
-
 .search-btn{
   height: 46px;
   width:46px;

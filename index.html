@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app>
     <head>
         <link rel="stylesheet" type="text/css" href="style.css">
         <meta charset="utf-8">
@@ -48,12 +48,13 @@
             <div class="about-info"></div>
         </main>
         <div class="search">
-          <input type="text" placeholder="Seach Library"><div class="search-btn"></div>
+          <input type="text" placeholder="Seach Library" ng-model="title"><div class="search-btn"></div>
         </div>
         <footer>
 
         </footer>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.js"></script>
         <script src="js/animation.js"></script>
+        <script src="angular.min.js"></script>
     </body>
 </html>
