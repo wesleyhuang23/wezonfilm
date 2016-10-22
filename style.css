@@ -134,7 +134,30 @@ main{
 
 .search {
   background-color: #F1C53C;
-  height: 10vh;
+  height: 98px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search input{
+  height: 40px;
+  width: 500px;
+  font-size: 20px;
+  font-weight: lighter;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+input[placeholder]{
+  font-style: italic;
+}
+
+.search-btn{
+  height: 46px;
+  width:46px;
+  background-color: black;
 }
 
 footer{
