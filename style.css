@@ -35,6 +35,24 @@ h3{
   justify-content: center;
 }
 
+.hamburger{
+  height: auto;
+  width: auto;
+  position: fixed;
+  left: 30px;
+}
+
+.hamburger button{
+  text-decoration: none;
+}
+
+.hamburger img{
+  height: 40px;
+  width:40px;
+  position:fixed;
+  top: 18px;
+}
+
 .nav-items{
   padding-top: 30px;
   /*border: 1px solid green;*/
