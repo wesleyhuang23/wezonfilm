@@ -69,6 +69,10 @@ header{
   text-align: center;
 }
 
+.nav-items p:hover{
+  text-decoration: underline;
+}
+
 h1{
   margin: 0;
   font-weight: lighter;
