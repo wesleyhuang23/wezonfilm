@@ -48,10 +48,6 @@ header{
   left: 30px;
 }
 
-.hamburger button{
-  text-decoration: none;
-}
-
 .hamburger img{
   height: 40px;
   width:40px;
@@ -162,19 +158,19 @@ footer{
 
 @media (max-width: 1425px){
   .trailer{
-    width: 800px;
+    width: 700px;
   }
   iframe{
-    width: 800px;
+    width: 700px;
   }
 }
 
 @media (max-width: 1200px){
   .trailer{
-    width: 700px;
+    width: 670px;
   }
   iframe{
-    width: 700px;
+    width: 670px;
   }
 }
 }

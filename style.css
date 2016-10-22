@@ -15,20 +15,9 @@ header{
   align-items: center;
 }
 
-.cancel{
-  height: 30px;
-  width: 30px;
-  display: flex;
-  justify-content: flex-end;
-  padding-right: 5px;
-  padding-top: 10px;
-  position: fixed;
-  left: 231px;
-  right: 4px;
-}
-
-.cancel img{
-  height: 20px;
+a{
+  text-decoration: none;
+  color: inherit;
 }
 
 h1{
@@ -39,6 +28,23 @@ h1{
 h3{
   margin: 0;
   font-weight: lighter;
+}
+
+.cancel img{
+  height: 20px;
+}
+
+
+.cancel{
+  height: 30px;
+  width: 30px;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 5px;
+  padding-top: 10px;
+  position: absolute;;
+  left: 231px;
+  right: 4px;
 }
 
 .side-menu{
@@ -56,10 +62,7 @@ h3{
   width: auto;
   position: absolute;
   left: 30px;
-}
-
-.hamburger button{
-  text-decoration: none;
+  top: 20px;
 }
 
 .hamburger img{
@@ -80,10 +83,10 @@ h3{
   padding-top: 20px;
   padding-bottom: 20px;
   text-align: center;
+  position: relative;
 }
 
 .nav-items p:hover{
-  color: red;
   text-decoration: underline;
 }
 
@@ -133,4 +136,46 @@ h3{
 footer{
   background: black;
   height:30vh;
+}
+
+@media (max-width: 700px){
+  .posters img{
+    height: 270px;
+  }
+  .hamburger{
+    height: 20px;
+    width: 20px;
+  }
+  .hamburger img{
+    height: 20px;
+    width:20px;
+  }
+  .title{
+    font-size: 10px;
+  }
+  h3{
+    font-size: 10px;
+  }
+  .nav-items{
+    padding-top: 15px;
+    /*border: 1px solid green;*/
+  }
+
+  .nav-items p {
+    font-size: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  .side-menu{
+    height: 100vh;
+    width: 200px;
+  }
+  .cancel{
+    height: 15px;
+    padding-right: 5px;
+    padding-top: 10px;
+    position: absolute;;
+    left: 160px;
+    right: 4px;
+  }
 }
