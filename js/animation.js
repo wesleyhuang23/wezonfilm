@@ -1,13 +1,12 @@
 $(document).ready(function(){
-  $('.side-menu').hide();
   /*opening side menu*/
   $('.hamburger').on('click', function(){
-    $('.side-menu').show();
+    $('.side-menu').animate({width: 'toggle'});
   });
 
   /*closing side menu*/
   $('.cancel').on('click', function(){
-    $('.side-menu').hide();
+    $('.side-menu').animate({width:'toggle'});
   });
 
 });
