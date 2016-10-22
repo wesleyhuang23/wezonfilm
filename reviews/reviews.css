@@ -15,6 +15,65 @@ header{
   align-items: center;
 }
 
+.cancel{
+  height: 30px;
+  width: 30px;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 5px;
+  padding-top: 10px;
+  position: fixed;
+  left: 231px;
+  right: 4px;
+}
+
+.cancel img{
+  height: 20px;
+}
+
+.side-menu{
+  height: 100vh;
+  width: 270px;
+  background-color: rgba(0,0,0,0.92);
+  position: fixed;
+  /*border: 1px solid red;*/
+  display: flex;
+  justify-content: center;
+}
+
+.hamburger{
+  height: auto;
+  width: auto;
+  position: fixed;
+  left: 30px;
+}
+
+.hamburger button{
+  text-decoration: none;
+}
+
+.hamburger img{
+  height: 40px;
+  width:40px;
+  position:fixed;
+  top: 18px;
+}
+
+.nav-items{
+  padding-top: 30px;
+  /*border: 1px solid green;*/
+}
+
+.nav-items p {
+  color:#F1C53C;
+  font-weight: lighter;;
+  font-family: helvetica;
+  font-size: 18px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
 h1{
   margin: 0;
   font-weight: lighter;
