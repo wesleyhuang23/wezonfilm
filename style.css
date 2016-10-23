@@ -118,6 +118,12 @@ main{
   background-color: #AFAB97;
 }
 
+figcaption{
+  background-color: rgba(51,44,31,0.75);
+  position: absolute;
+  color: white;
+}
+
 .about {
   text-align: center;
   background-color: rgba(48,48,47,0.05);
@@ -154,6 +160,15 @@ main{
   height: 46px;
   width:46px;
   background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-btn img{
+  height: 30px;
+  width: 30px;
+  transform: rotate(90deg);
 }
 
 footer{
@@ -200,6 +215,9 @@ footer{
     position: absolute;;
     left: 160px;
     right: 4px;
+  }
+  .search input{
+    width: 300px;
   }
 }
 
