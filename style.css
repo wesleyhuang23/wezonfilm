@@ -135,7 +135,6 @@ figcaption{
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 
 .about-me{
@@ -155,6 +154,15 @@ figcaption{
 .portrait img{
   border-radius: 300px;
   height: 250px;
+}
+
+.buffer{
+  height: 50vh;
+  background-image: url('img/492dbf38a6da193d8cd691b66d16bef9.jpg');
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0px -65px;
 }
 
 .search {
