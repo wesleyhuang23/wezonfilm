@@ -1,0 +1,149 @@
+*{
+  font-family:helvetica;
+}
+body {
+  background-color: #F8F8F6;
+  margin: 0;
+}
+
+header{
+  background-color: #F1C53C;
+  text-align: center;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button{
+  background: transparent;
+  border: none !important;
+  font-size: 0;
+}
+
+.cancel{
+  height: 30px;
+  width: 30px;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 5px;
+  padding-top: 10px;
+  position: fixed;
+  left: 231px;
+  right: 4px;
+}
+
+.cancel img{
+  height: 20px;
+}
+
+.side-menu{
+  height: 100vh;
+  width: 270px;
+  background-color: rgba(0,0,0,0.92);
+  position: fixed;
+  /*border: 1px solid red;*/
+  display: flex;
+  justify-content: center;
+  display: none;
+}
+
+.hamburger{
+  height: auto;
+  width: auto;
+  position: absolute;
+  left: 30px;
+}
+
+.hamburger img{
+  height: 40px;
+  width:40px;
+}
+
+.nav-items{
+  padding-top: 30px;
+  /*border: 1px solid green;*/
+}
+
+.nav-items p {
+  color:#F1C53C;
+  font-weight: lighter;;
+  font-family: helvetica;
+  font-size: 18px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.nav-items p:hover{
+  text-decoration: underline;
+}
+
+h1{
+  margin: 0;
+  font-weight: lighter;
+}
+
+h3{
+  margin: 0;
+  font-weight: lighter;
+}
+
+p{
+  font-weight: lighter;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.library{
+  text-align: center;
+  background-color: rgba(48,48,47,0.05);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5vh;
+}
+
+.search {
+  height: 98px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search input{
+  height: 40px;
+  width: 500px;
+  font-size: 20px;
+  font-weight: lighter;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: none;
+  border: 1px solid black;
+  outline: none;
+}
+
+.search-btn{
+  height: 44px;
+  width:44px;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-btn img{
+  height: 30px;
+  width: 30px;
+  transform: rotate(90deg);
+}
+
+footer{
+  background: black;
+  height:30vh;
+}

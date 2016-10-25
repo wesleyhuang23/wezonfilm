@@ -181,11 +181,14 @@ figcaption{
   display: flex;
   align-items: center;
   justify-content: center;
+  border: none;
+  border: 1px solid black;
+  outline: none;
 }
 
 .search-btn{
-  height: 46px;
-  width:46px;
+  height: 44px;
+  width:44px;
   background-color: black;
   display: flex;
   justify-content: center;
