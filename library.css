@@ -145,7 +145,14 @@ a {
 
 .film-display{
   padding-left: 25px;
+  padding-bottom: 20px;
   width: 200px;
+  text-align: center;
+}
+
+.name:hover{
+  text-decoration: underline;
+
 }
 
 .film-display img{
