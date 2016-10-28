@@ -128,20 +128,30 @@ a {
   outline: none;
 }
 
-.search-btn{
-  height: 44px;
-  width:44px;
-  background-color: black;
+.library-wrapper{
+  margin: 0;
+  /*border: 1px solid green;*/
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;;
+  align-items: flex-start;
+  align-content: center;
+  width: 100vw;
 }
 
-.search-btn img{
-  height: 30px;
-  width: 30px;
-  transform: rotate(90deg);
+.library-content{
+  width: auto;
+  display: inline-block;
 }
+
+.film-display{
+  padding-left: 25px;
+  width: 200px;
+}
+
+.film-display img{
+  height: 300px;
+}
+
 
 footer{
   background: black;
