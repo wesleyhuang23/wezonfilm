@@ -17,8 +17,6 @@ var films = [
 },
 
 
-
-
 ];
 
 console.log(films);

@@ -63,7 +63,7 @@ h3{
   width: auto;
   position: absolute;
   left: 30px;
-  top: 20px;
+  top: 40px;
 }
 
 .hamburger img{
@@ -110,8 +110,16 @@ h3{
   padding: 7px;
 }
 
+.posters-wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
 .posters img:hover{
   background-color: #AFAB97;
+  transition: ease;
 }
 
 figcaption{
@@ -206,6 +214,23 @@ footer{
   height:30vh;
 }
 
+@media (max-width: 1149px){
+  .posters{
+    text-align: center;
+  }
+}
+
+@media (min-width:1190px) {
+  .about-me p{
+    font-size: 21px;
+  }
+
+  .portrait img{
+    border-radius: 300px;
+    height: 300px;
+  }
+}
+
 @media (max-width: 945px){
   .about-info{
     display: flex;
@@ -218,6 +243,9 @@ footer{
   .posters img{
     height: 300px;
   }
+  .posters {
+    text-align: center;
+  }
 }
 
 @media (max-width: 700px){
@@ -226,7 +254,7 @@ footer{
     width: 25px;
     position: absolute;
     left: 30px;
-    top: 30px;
+    top: 45px;
   }
   .hamburger img{
     height: 20px;
