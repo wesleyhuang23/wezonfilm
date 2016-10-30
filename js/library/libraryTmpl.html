@@ -1,0 +1,20 @@
+
+        <main ng-controller="filmCtrl">
+            <div class="library">
+                <h3>Library</h3>
+            </div>
+            <div class="search-library">
+                <input type="text" placeholder="Seach Library" ng-model="titleFilter.Title">
+            </div>
+            <div  class="library-main">
+            <div class="library-wrapper">
+            <div class="library-content" ng-repeat="film in films | filter: titleFilter">
+                    <div class=film-display>
+                        <div><a href="{{film.link}}"><img ng-src="{{film.Poster}}"></div>
+                        <div class='name'>{{film.Title}}
+                            ({{film.Year}})</div></a>
+                    </div>
+            </div>
+          </div>
+        </div>
+        </main>

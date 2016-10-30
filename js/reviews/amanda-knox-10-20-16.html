@@ -1,27 +1,27 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="wezApp">
   <head>
     <link rel="stylesheet" type="text/css" href="reviews.css">
     <meta charset="utf-8">
     <title>Wez on Film</title>
   </head>
-  <body>
+  <body ng-controller="filmCtrl">
     <div class="side-menu">
       <div class="cancel">
         <img src="../assets/icons/close-x.png">
       </div>
         <div class="nav-items">
-            <a href="../index.html"><p>HOME</p></a>
-            <a href="library.html"><p>LIBRARY</p></a>
+            <a ui-sref="home"><p>HOME</p></a>
+            <a ui-sref="library"><p>LIBRARY</p></a>
             <p>FAVORITES</p>
         </div>
     </div>
     <header>
       <div class="hamburger">
-        <a href="#"><img src="../assets/icons/burger-menu.png"></a>
+        <a href=""><img src="../../assets/icons/burger-menu.png"></a>
       </div>
       <div>
-      <a href="../index.html"><h1>WEZ ON FILM</h1></a>
+      <a ui-sref="home"><h1>WEZ ON FILM</h1></a>
     </div>
     </header>
     <main>
@@ -30,7 +30,7 @@
       </div>
       <div class="wrapper">
       <div class="column-left">
-        <img id="side" src="../img/amanda-knox-poster.jpg">
+        <img id="side" src="../../img/amanda-knox-poster.jpg">
       </div>
       <div class="trailer">
       <iframe src="https://www.youtube.com/embed/f5SFjSxzS7M" frameborder="0" allowfullscreen></iframe>
@@ -49,6 +49,6 @@
   <footer>
   </footer>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.js"></script>
-  <script src="../js/animation.js"></script>
+  <script src="../animation.js"></script>
   </body>
 </html>

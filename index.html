@@ -8,69 +8,46 @@
     <body ng-controller="filmCtrl">
         <div class="side-menu">
           <div class="cancel">
-            <a href="#"><img src="./assets/icons/close-x.png"></a>
+            <a href=""><img src="./assets/icons/close-x.png"></a>
           </div>
             <div class="nav-items">
-                <p>HOME</p>
-                <a href="library.html"><p>LIBRARY</p></a>
+                <p><a ui-sref="home">HOME</a></p>
+                <p><a ui-sref="library">LIBRARY</a></p>
                 <p>FAVORITES</p>
             </div>
         </div>
         <header>
 
           <div class="hamburger">
-            <a href="#">
+            <a href="">
             <img src="./assets/icons/burger-menu.png">
           </a>
           </div>
             <div class="title">
-              <a href="index.html">
+              <a ui-sref="home">
                 <h1>WEZ ON FILM</h1>
               </a>
             </div>
         </header>
         <main>
-            <div class="reviews">
-                <h3>Latest Reviews</h3>
-            </div>
-            <div class="posters-wrapper">
-            <div class="posters">
-                <a href="reviews/amanda-knox-10-20-16.html"><img src="img/amanda-knox-poster.jpg"></a>
 
-                <a href=""><img src="img/o-ST-VINCENT-POSTER-900.jpg"></a>
+        <div class="view-container">
+        <div ui-view>
+          <!--- secret portal where awesome happens --->
+        </div>
+      </div>
 
-                <a href="reviews/come-drink-with-me-2016-10-22.html">
-                  <img src="img/tumblr_nfs02fP10c1qimoe7o4_1280.jpg">
-                </a>
 
-                <a href="">
-                  <img src="img/1118full-the-kingdom-of-dreams-and-madness-poster.jpg"></a>
-                <a href=""><img src="img/sully-poster.jpg"></a>
-            </div>
-          </div>
-            <div class="about">
-                <h3>About</h3>
-            </div>
-            <div class="about-info">
-              <div class="portrait">
-                <img src="img/Wesley-resized.jpg">
-              </div>
-              <div class="about-me">
-                <p>Film, just like any art form, is tool that guides us through the rough waters of life. Stories that flicker on a screen offer some of the deepest insight into the human experience. Invoking a sense of awareness, allowing us to contemplate our own existance. Here is where I get to share those experiences with you. My thoughts on the good, the bad and the ugly.<br><br> My name is Wesley and I love films. You can also call me Wez.</p>
-              </div>
-            </div>
         </main>
         <div class="buffer">
         </div>
-        <div class="search">
-          <input type="text" placeholder="Seach Library">
-          <a href="#"><div class="search-btn"><img src="./assets/icons/white-arrow-down.png"></div></a>
-        </div>
+
         <footer>
         </footer>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.js"></script>
-        <script src="js/animation.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.1/angular-ui-router.js"></script>
+        <script src="js/animation.js"></script>
         <script src="js/app.js"></script>
         <script src="js/controller.js"></script>
         <script src="js/service.js"></script>

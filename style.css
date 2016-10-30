@@ -91,6 +91,10 @@ h3{
   text-decoration: underline;
 }
 
+/*==================================
+HOME VIEW
+===========================*/
+
 .reviews {
   background-color: rgba(48,48,47,0.05);
   display: flex;
@@ -164,6 +168,10 @@ figcaption{
   height: 250px;
 }
 
+/*==========
+HOME VIEW END
+=============*/
+
 .buffer{
   height: 50vh;
   background-image: url('img/492dbf38a6da193d8cd691b66d16bef9.jpg');
@@ -173,15 +181,29 @@ figcaption{
   background-position: 0px -65px;
 }
 
-.search {
-  background-color: #F1C53C;
+/*===============
+LIBRARY VIEW
+==================*/
+
+
+.library{
+  text-align: center;
+  background-color: rgba(48,48,47,0.05);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5vh;
+  width: 100vw;
+}
+
+.search-library {
   height: 98px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.search input{
+.search-library input{
   height: 40px;
   width: 500px;
   font-size: 20px;
@@ -189,24 +211,49 @@ figcaption{
   display: flex;
   align-items: center;
   justify-content: center;
+  background: transparent;
   border: none;
   border: 1px solid black;
   outline: none;
 }
 
-.search-btn{
-  height: 44px;
-  width:44px;
-  background-color: black;
+.library-main{
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
-.search-btn img{
-  height: 30px;
-  width: 30px;
-  transform: rotate(90deg);
+.library-wrapper{
+  margin: 0;
+  border: 1px solid green;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: center;
+  width: 100vw;
+  position: relative;
+}
+
+.library-content{
+  width: auto;
+}
+
+.film-display{
+  padding-left: 25px;
+  padding-bottom: 25px;
+  width: 200px;
+  text-align: center;
+}
+
+.name:hover{
+  text-decoration: underline;
+  transition: slow;
+
+}
+
+.film-display img{
+  height: 300px;
 }
 
 footer{
