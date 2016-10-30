@@ -1,0 +1,1 @@
+angular.module("reviewsApp",["ui.router"]).config(function(u,e){});

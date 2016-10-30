@@ -28,7 +28,7 @@ button{
   justify-content: flex-end;
   padding-right: 5px;
   padding-top: 10px;
-  position: fixed;
+  position: relative;;
   left: 231px;
   right: 4px;
 }
