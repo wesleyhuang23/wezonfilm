@@ -8,4 +8,5 @@ $(document).ready(function(){
   $('.cancel').on('click', function(){
     $('.side-menu').animate({width:'toggle'});
   });
+
 });

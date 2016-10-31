@@ -13,11 +13,6 @@ angular.module('wezApp', ['ui.router'])
     templateUrl: 'js/library/libraryTmpl.html',
     url: '/library',
     controller: 'filmCtrl'
-  })
-  .state('amanda-knox-review',{
-    templateUrl: 'js/reviews/amanda-knoxTmpl.html',
-    url: '/amanda-knox-review',
-    controller: 'reviewsCtrl'
   });
 
   $urlRouterProvider.otherwise('/home');

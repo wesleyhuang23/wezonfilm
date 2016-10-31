@@ -1,0 +1,1 @@
+$(document).ready(function(){$(".hamburger").on("click",function(){$(".side-menu").animate({width:"toggle"})}),$(".cancel").on("click",function(){$(".side-menu").animate({width:"toggle"})})});

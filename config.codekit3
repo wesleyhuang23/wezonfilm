@@ -161,6 +161,15 @@
 		"oAP": "\/js\/library\/libraryTmpl.html",
 		"oF": 0
 		},
+	"\/js\/min\/animation-min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/js\/min\/min\/animation-min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
 	"\/js\/min\/app-min.js": {
 		"ft": 64,
 		"mi": 1,
@@ -188,10 +197,10 @@
 		"sC": 1,
 		"tS": 0
 		},
-	"\/js\/reviews\/amanda-knoxTmpl.html": {
+	"\/js\/reviews\/amanda-knox-review.html": {
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/js\/reviews\/amanda-knoxTmpl.html",
+		"oAP": "\/js\/reviews\/amanda-knox-review.html",
 		"oF": 0
 		},
 	"\/js\/reviews\/come-drink-with-me-2016-10-22.html": {
@@ -226,6 +235,16 @@
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
+		},
+	"\/js\/reviews\/reviews.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/js\/reviews\/reviews-ck.css",
+		"oF": 0,
+		"oS": 0
 		},
 	"\/js\/reviews\/reviewsCtrl.js": {
 		"ft": 64,
@@ -263,21 +282,15 @@
 		"sC": 1,
 		"tS": 0
 		},
-	"\/reviews.css": {
+	"\/reviews-ck.css": {
 		"aP": 0,
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
 		"oA": 2,
-		"oAP": "\/reviews-ck.css",
+		"oAP": "\/reviews-ck-ck.css",
 		"oF": 0,
 		"oS": 0
-		},
-	"\/reviews.html": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/reviews.html",
-		"oF": 0
 		},
 	"\/style-ck.css": {
 		"aP": 0,

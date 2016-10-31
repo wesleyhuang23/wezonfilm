@@ -231,12 +231,12 @@ LIBRARY VIEW
   justify-content: flex-start;
   align-items: flex-start;
   align-content: center;
-  width: 100vw;
+  width: 1000px;
   position: relative;
 }
 
 .library-content{
-  width: auto;
+  width: 1000px
 }
 
 .film-display{
@@ -244,6 +244,7 @@ LIBRARY VIEW
   padding-bottom: 25px;
   width: 200px;
   text-align: center;
+  border: 1px solid red;
 }
 
 .name:hover{
