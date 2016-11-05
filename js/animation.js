@@ -9,4 +9,8 @@ $(document).ready(function(){
     $('.side-menu').animate({width:'toggle'});
   });
 
+  $('.nav-items a').on('click', function(){
+    $('.side-menu').animate({width:'toggle'});
+  });
+
 });

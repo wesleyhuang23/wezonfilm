@@ -6,8 +6,8 @@ angular.module('wezApp', ['ui.router'])
   $stateProvider
   .state('home', {
     templateUrl: 'js/home/homeTmpl.html',
-    url: '/home', //url for when you search in the bar
-    controller: 'filmCtrl'
+    url: '/', //url for when you search in the bar
+    controller: 'homeCtrl'
   })
   .state('library', {
     templateUrl: 'js/library/libraryTmpl.html',
@@ -15,6 +15,6 @@ angular.module('wezApp', ['ui.router'])
     controller: 'filmCtrl'
   });
 
-  $urlRouterProvider.otherwise('/home');
+  $urlRouterProvider.otherwise('/');
 
 });

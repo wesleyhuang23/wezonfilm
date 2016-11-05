@@ -1,21 +1,15 @@
 
-<div class="main-wrapper" ng-controller="filmCtrl">
+<div class="main-wrapper">
     <div class="reviews">
         <h3>Latest Reviews</h3>
     </div>
     <div class="posters-wrapper">
     <div class="posters">
-        <a href="js/reviews/amanda-knox-review.html"><img src="img/amanda-knox-poster.jpg"></a>
-
-        <a href=""><img src="img/o-ST-VINCENT-POSTER-900.jpg"></a>
-
-        <a ui-sref="js/reviews/come-drink-with-me-2016-10-22.html">
-          <img src="img/tumblr_nfs02fP10c1qimoe7o4_1280.jpg">
-        </a>
-
-        <a href="">
-          <img src="img/1118full-the-kingdom-of-dreams-and-madness-poster.jpg"></a>
-        <a href=""><img src="img/sully-poster.jpg"></a>
+      <div class=film-display-home ng-repeat="films in latestFilms track by $index">
+          <div><a href="{{films.link}}"><img ng-src="{{films.Poster}}"></div>
+          <div class='name'>{{films.Title}}
+              ({{films.Year}})</div></a>
+      </div>
     </div>
   </div>
   <div class="about">
