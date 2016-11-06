@@ -136,7 +136,7 @@ iframe{
 }
 
 .wrapper {
-  height: 1198px;
+  height: auto;
   width: 77.5vw;
   margin: 40px;
   background-color: #AFAB97;
@@ -156,8 +156,9 @@ iframe{
 
 .reviewBody{
   width: auto;
-  height: 500px;
-  margin: 50px;
+  height: auto;
+  text-align: justify;
+  padding: 30px;
 }
 
 .review {
@@ -165,15 +166,16 @@ iframe{
 }
 
 .review p {
-  padding-left: 20px;
   margin: 0;
+  font-size: 23px;
+  padding-right: 10px;
+  padding-left: 10px;
 }
 
 .review h3 {
   font-size: 35px;
   font-weight: 500;
 }
-
 
 
 .search {
@@ -195,9 +197,6 @@ footer{
   }
   .media-container{
     width: 90vw;
-  }
-  .reviewBody{
-    padding-right: 200px;
   }
 }
 

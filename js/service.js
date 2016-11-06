@@ -33,6 +33,18 @@ var films = [
 
 ];
 
+var favorites =
+[
+  {"Title":"Mountains May Depart","Year":"2015",
+  "Poster":"https://images-na.ssl-images-amazon.com/images/M/MV5BMjMwNjgyMjk1OV5BMl5BanBnXkFtZTgwMzgzNDc5NzE@._V1_SX300.jpg"
+},
+  {"Title":"Naked Youth","Year":"1960","Poster":"https://image.tmdb.org/t/p/w1280/itF3KhmSogKbzJ8Jvp8OtBxEfS9.jpg","imdbID":"tt0054286"}
+];
+
+this.getFavs = function(){
+  return favorites;
+};
+
 console.log(films);
   this.getFilm = function(){
     console.log(films);
