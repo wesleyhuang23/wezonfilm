@@ -103,23 +103,32 @@ HOME VIEW
   justify-content: center;
   align-items: center;
   height: 5vh;
+  width: 100vw;
 }
 
 .posters{
+  border: 1px solid green;
   height: auto;
   text-align: center;
-  width: 80vw;
+  width: 100vw;
 }
 
 .film-display-home{
   display: inline-block;
   padding: 20px;
+  padding-bottom: 50px;
   text-align: center;
 }
 
 .film-display-home img{
-  height: 400px;
-  padding: : 5px;
+  height: 340px;
+  padding:5px;
+}
+
+.name{
+  width: 223px;
+  position: absolute;
+  text-align: center;
 }
 
 .posters-wrapper{
@@ -127,6 +136,7 @@ HOME VIEW
   justify-content: center;
   align-items: center;
   text-align: center;
+  width: 100vw;
 }
 
 .film-display-home:hover{
@@ -146,6 +156,7 @@ figcaption{
   justify-content: center;
   align-items: center;
   height: 5vh;
+  width: 100vw;
 }
 
 .about-info{
@@ -154,10 +165,11 @@ figcaption{
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100vw;
 }
 
 .about-me{
-  width: 530px;
+  width: 550px;
   height: auto;
   padding-left: 70px;
 }
@@ -188,6 +200,7 @@ HOME VIEW END
   background-attachment: fixed;
   position: relative;
   background-position: 0px 22px;
+  width: 100vw;
 }
 
 /*===============
@@ -231,6 +244,7 @@ LIBRARY VIEW
   height: auto;
   position: relative;
   text-align: center;
+  padding-bottom: 30px;
 }
 
 .library-content{
@@ -242,6 +256,7 @@ LIBRARY VIEW
 
 .film-display{
   padding: 15px;
+  padding-bottom: 40px;
   width: 200px;
   display: inline-block;
   z-index: -1;
@@ -254,6 +269,11 @@ LIBRARY VIEW
 
 .film-display img{
   height: 300px;
+}
+
+.name-library{
+  width: 200px;
+  position: absolute;
 }
 
 footer{
