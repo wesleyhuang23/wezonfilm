@@ -97,7 +97,36 @@ h3{
 /*==================================
 HOME VIEW
 ===========================*/
+.new-fav{
+  background-image: url('./img/mountains-depart.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  height: 83.5vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.new-fav{
+  font-size: 50px;
+  font-weight: bold;
+  color: white;
+}
 
+.new-fav h3{
+    border: 5px solid white;
+    padding: 15px;
+}
+
+.newest-fav{
+  text-align: center;
+  background-color: rgba(48,48,47,0.05);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5vh;
+  width: 100vw;
+}
 .reviews {
   background-color: rgba(48,48,47,0.05);
   display: flex;
@@ -186,6 +215,8 @@ figcaption{
   border-radius: 300px;
   height: 250px;
 }
+
+
 
 /*==========
 HOME VIEW END

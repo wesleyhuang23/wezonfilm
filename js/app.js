@@ -5,14 +5,18 @@ angular.module('wezApp', ['ui.router'])
 
   $stateProvider
   .state('home', {
-    templateUrl: 'js/home/homeTmpl.html',
+    templateUrl: 'views/homeTmpl.html',
     url: '/', //url for when you search in the bar
     controller: 'homeCtrl'
   })
   .state('library', {
-    templateUrl: 'js/library/libraryTmpl.html',
+    templateUrl: 'views/libraryTmpl.html',
     url: '/library',
     controller: 'filmCtrl'
+  })
+  .state('contact', {
+    templateUrl: 'views/contact.html',
+    url: '/contact'
   });
 
   $urlRouterProvider.otherwise('/');

@@ -1,0 +1,35 @@
+
+<div class="main-wrapper">
+    <div class="newest-fav">
+      <h3>NEWEST FAVORITE</h3>
+    </div>
+    <div class="new-fav">
+      <h3>MOUNTAINS MAY DEPART</h3>
+    </div>
+    <div class="reviews">
+        <h3>Latest Reviews</h3>
+    </div>
+    <div class="posters-wrapper">
+    <div class="posters">
+      <div class=film-display-home ng-repeat="films in latestFilms track by $index">
+          <div><a href="{{films.link}}"><img ng-src="{{films.Poster}}"></div>
+          <div class='name'>{{films.Title}}
+              ({{films.Year}})</div></a>
+      </div>
+    </div>
+  </div>
+  <div class="about">
+      <h3>About</h3>
+  </div>
+  <div class="about-info">
+    <div class="portrait">
+      <img src="../../img/Wesley-resized.jpg">
+    </div>
+    <div class="about-me">
+      <p>Film, just like any art form, is tool that guides us through the turbulant waves of life. Stories that flicker on a screen offer some of the deepest insight into the human experience. Invoking a sense of awareness, allowing us to contemplate our own existance. Here is where I get to share those experiences with you. My thoughts on the good, the bad and the ugly.<br><br> My name is Wesley and I love films. You can also call me Wez.</p>
+    </div>
+  </div>
+</main>
+<div class="buffer">
+</div>
+</div>
