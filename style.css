@@ -57,6 +57,7 @@ h3{
   display: flex;
   justify-content: center;
   display: none;
+  z-index: 1;
 }
 
 .hamburger{
@@ -107,7 +108,6 @@ HOME VIEW
 }
 
 .posters{
-  border: 1px solid green;
   height: auto;
   text-align: center;
   width: 100vw;
@@ -282,6 +282,18 @@ footer{
   width: 100vw;
 }
 
+@media (max-width: 1670px){
+  .posters{
+    width: 70vw;
+  }
+}
+
+@media (max-width: 1185px){
+  .posters{
+    width: 90vw
+  }
+}
+
 @media (max-width: 1149px){
   .posters{
     text-align: center;
@@ -322,7 +334,7 @@ footer{
     width: 25px;
     position: absolute;
     left: 30px;
-    top: 45px;
+    top: 35px;
   }
   .hamburger img{
     height: 20px;
@@ -358,6 +370,10 @@ footer{
   }
   .search input{
     width: 300px;
+  }
+  .buffer{
+    background-position: center;
+    position: relative;
   }
 }
 
