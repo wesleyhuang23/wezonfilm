@@ -4,6 +4,7 @@
 body {
   background-color: #F8F8F6;
   margin: 0;
+  overflow: auto;
 }
 
 header{
@@ -57,7 +58,7 @@ h3{
   display: flex;
   justify-content: center;
   display: none;
-  z-index: 1;
+  z-index: 7;
 }
 
 .hamburger{
@@ -114,6 +115,8 @@ HOME VIEW
 }
 
 .new-fav h3{
+  position: absolute;
+  z-index: 2;
     border: 5px solid white;
     padding: 15px;
 }
@@ -127,6 +130,15 @@ HOME VIEW
   height: 5vh;
   width: 100vw;
 }
+#gradient{
+  width: 100vw;
+  height: 83.5vh;
+  position: absolute;
+  z-index: 1;
+    background-image: linear-gradient(-45deg, black 25%, transparent 25%, transparent 50%, black 50%, black 75%, transparent 75%, transparent);
+    background-size: 4px 4px;
+}
+
 .reviews {
   background-color: rgba(48,48,47,0.05);
   display: flex;
