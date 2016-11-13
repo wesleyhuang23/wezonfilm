@@ -1,4 +1,4 @@
-angular.module('wezApp').service('filmSvc', function($http){
+angular.module('wezApp').service('filmSvc', function($http, $stateParams){
 var films = [
 
 {"Title":"Billy Lynn's Long Halftime Walk","Year":"2016","Poster":"https://images-na.ssl-images-amazon.com/images/M/MV5BMTY1NDI1Nzg4OF5BMl5BanBnXkFtZTgwNjYxOTg4ODE@._V1_SX300.jpg",
@@ -12,7 +12,7 @@ var films = [
 },
 {"Title":"Amanda Knox","Year":"2016",
 "Poster":"https://images-na.ssl-images-amazon.com/images/M/MV5BNTY5NjE4MTQyNF5BMl5BanBnXkFtZTgwMzg1NjEwMDI@._V1_SX300.jpg",
-"link":"js/reviews/amanda-knox-review.html",
+"link":"https://www.youtube.com/watch?v=f5SFjSxzS7M",
 "imdbID":"tt5952332"
 },
 {"Title":"St. Vincent","Year":"2014",
@@ -109,6 +109,80 @@ console.log(films);
   this.getFilm = function(){
     console.log(films);
     return films;
+  };
+
+  this.getFilmDetails = function(id){
+    console.log(id);
+    console.log('reached service');
+    return $http({
+      method: 'GET',
+      url: 'http://www.omdbapi.com/?i=' + id + '&plot=short&r=json'
+    }).then(function(response){
+      var films = [
+      {"Title":"Billy Lynn's Long Halftime Walk",
+      "link":"",
+      "review":""
+      },
+      {"Title":"Doctor Strange",
+      "link":"",
+      "review":""
+      },
+      {"Title":"Hacksaw Ridge",
+      "link":"",
+      "review":""
+      },
+      {"Title":"Amanda Knox",
+      "link":"http://www.youtube.com/embed/f5SFjSxzS7M",
+      "review":"Amanda Knox, from what I know from seeing her name in the mainstream media was responsible for brutally stabbing her roomate while studing abroad in Italy. The documentary is told from severl different perspectives, including Amanda Knox, the police chief and the journalist behind the reporting of the incident.     Before seeing the film I never looked into the story of Amanda Knox. Seeing her on TV and how the media projected her I assumed she was guilty and hiding the truth. As the story was unfolding I always had the thought that she could be lying to us, even though she had the look and perception of being innocent.     The filmmakers had their characters sit in the center and speaking directly to the camera. This setup is strikingly similar to that of Kurosawa's film 'Rashomon' where we have a court case and the characters confess to the judge, which in this case is us the audience. Trying to plead their innocnece. You don't know who is really telling the truth. This just shows us how are opnions can be easily manipulated by how information is delivered. We become gulible. In the case of Amanda Knox we thought she was a pervert and a brutal killer. It was this simple persuation and misinterpretation by the police and media that led to her arrest. We are capable of abandoning the truth with simple misinformation and incorrect perception.     We even see instances of that in the film when Amanda was being interogated by the police. Hitting her and repeating the questions to the point where she did not beleive herself. People don't want the truth because the truth or the fact does not align with their beleifs. Therefore people would prefer a different answer that fits with their own. Maybe it might make them look bad. Or it might not make a good headline. People want to be perceived and looked at based on their beleif system. It is during this process we cause harm to others and ourselves."
+      },
+      {"Title":"St. Vincent",
+      "link":"",
+      "review":""
+      },
+      {"Title":"Come Drink with Me",
+      "link":"js/reviews/come-drink-with-me-2016-10-22.html",
+      "review":""
+      },
+      {"Title":"The Kingdom of Dreams and Madness",
+      "link":"",
+      "review":""
+      },
+      {"Title":"Sully",
+      "link":"",
+      "review":""
+      },
+
+
+      ];
+      console.log('reached service.js');
+      console.log(response);
+      var info = {};
+      console.log(response.data.Title);
+      info.title = response.data.Title;
+      info.year = response.data.Year;
+      info.genre = response.data.Genre;
+      info.poster = response.data.Poster;
+      info.findLink = function(films){
+        console.log(films[3].Title);
+        for(var i = 0; i < films.length; i++){
+          console.log(films[i].Title);
+          if(films[i].Title === response.data.Title){
+            info.link = films[i].link;
+          }
+        }
+      };
+      info.findReview = function(films){
+        for(var i = 0; i < films.length; i++){
+          if(films[i].Title === response.data.Title){
+            info.review = films[i].review;
+          }
+        }
+      };
+      info.findReview(films);
+      info.findLink(films);
+      return info;
+    });
+
   };
 
 });
