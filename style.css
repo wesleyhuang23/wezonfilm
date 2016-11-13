@@ -252,8 +252,19 @@ HOME VIEW END
   background-size: cover;
   background-attachment: fixed;
   position: relative;
-  background-position: 0px 22px;
+  background-position: 0px 10px;
   width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo{
+  border: 2px solid white;
+  font-weight: bold;
+  font-size: 70px;
+  color: white;
+  padding: 10px;
 }
 
 /*===============

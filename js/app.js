@@ -14,6 +14,11 @@ angular.module('wezApp', ['ui.router'])
     url: '/library',
     controller: 'filmCtrl'
   })
+  .state('reviews', {
+    templateUrl: 'views/reviews.html',
+    url: '/reviews/:id',
+    controller: 'reviewsCtrl'
+  })
   .state('favorites',{
     templateUrl: 'views/favorites.html',
     url: '/favorites',
