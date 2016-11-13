@@ -15,16 +15,24 @@
   <iframe ng-src="{{trustSrc(filmDetail.link)}}" frameborder="0" allowfullscreen></iframe>
   </div>
   </div>
+
+
+
   <br>
   <br>
   <div class="reviewBody">
+    <a href="javascript:window.print()">
+    <div id="print">
+      <p>PRINT REVIEW</p>
+    </div>
+  </a>
     <div class="review">
       <h3>{{filmDetail.title}} ({{filmDetail.year}})</h3>
       <br>
       <h5>Wesley Huang </h5>
       <br>
       <br>
-      {{filmDetail.review}}
+      <p>{{filmDetail.review}}</p>
   </div>
   </div>
 
