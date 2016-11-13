@@ -21,7 +21,7 @@ angular.module('wezApp', ['ui.router'])
   })
   .state('favorites',{
     templateUrl: 'views/favorites.html',
-    url: '/favorites',
+    url: '/favorites/',
     controller: 'favCtrl'
   })
   .state('contact', {

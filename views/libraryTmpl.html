@@ -1,5 +1,5 @@
 
-        <main class="library-main" ng-controller="filmCtrl">
+        <main class="library-main">
             <div class="library">
                 <h3>Library</h3>
             </div>
@@ -8,11 +8,13 @@
             </div>
             <div class="library-wrapper">
             <div class="library-content" ng-repeat="film in films | filter: titleFilter">
+              <a ui-sref="reviews({id:'{{films.imdbID}}'})">
                     <div class=film-display>
                         <div><a href="{{film.link}}"><img ng-src="{{film.Poster}}"></div>
                         <div class='name-library'>{{film.Title}}
                             ({{film.Year}})</div></a>
                     </div>
+                  </a>
             </div>
           </div>
         </main>

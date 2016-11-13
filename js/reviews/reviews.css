@@ -21,7 +21,7 @@ button{
   font-size: 0;
 }
 
-main{
+.reviews-main{
   display: flex;
   justify-content: center;
   align-items: center;
