@@ -88,6 +88,7 @@ iframe{
   background-color:gray;
   position: absolute;
   right: 250px;
+  top: 700px;
 }
 
 #print p {
@@ -140,6 +141,9 @@ iframe{
   font-weight: 500;
 }
 
+.film-info p{
+  font-size: 15px;
+}
 
 .search {
   background-color: #F1C53C;
@@ -153,10 +157,10 @@ footer{
 
 @media (max-width: 1600px){
   .trailer{
-    width: 800px;
+    width: 53vw;
   }
   iframe{
-    width: 800px;
+    width: 53vw;
   }
   .media-container{
     width: 90vw;
@@ -170,6 +174,9 @@ footer{
   iframe{
     width: 51vw;
   }
+  #print{
+    right: 200px;
+  }
 }
 
 @media (max-width: 1200px){
@@ -179,15 +186,18 @@ footer{
   iframe{
     width: 48vw;
   }
+  #print{
+    right: 170px;
+  }
 }
 }
 
 @media (max-width: 1195px){
   .trailer{
-    width: 650px;
+    width: 46vw;
   }
   iframe{
-    width: 650px;
+    width: 46vw;
   }
 }
 

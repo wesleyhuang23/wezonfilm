@@ -162,6 +162,13 @@ console.log(films);
       info.year = response.data.Year;
       info.genre = response.data.Genre;
       info.poster = response.data.Poster;
+      info.actors = response.data.Actors;
+      info.director = response.data.Director;
+      info.runtime = response.data.Runtime;
+      info.writer = response.data.Writer;
+      info.language = response.data.Language;
+      info.country = response.data.Country;
+      info.release = response.data.Released;
       info.findLink = function(films){
         console.log(films[3].Title);
         for(var i = 0; i < films.length; i++){
