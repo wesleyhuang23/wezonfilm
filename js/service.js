@@ -142,11 +142,16 @@ console.log(films);
       },
       {"Title":"Hacksaw Ridge",
       "link":"https://www.youtube.com/embed/s2-1hz1juBI",
-      "review":"'Hacksaw Ridge' tells the story of Private Desmond Doss, who was a World War 2 field medic who chose not to carry a weapon in battle. When I first saw the trailer for Hacksaw Ridge I was really excited. Historical films have always been a favorite genre of mine. What hooked me about the story was a man who stuck to his beleifs and never under any circumstances did he give them up, even when his life was in danger. Mel Gibson who has returned to the big screen once again does a great job allowing the veiwers to empathize with Desmond. We see who this man was and how he came to formulate the beleifs that he had. The stories structure has it centered around his beleif he came to adopt from the bible of 'Thou shall not kill'. We see Desmond grow as a child, then through boot camp where the tempatation to fight back or protect is clearly present. There were many times in the film where his beleif was tested. We always have our own philosophies, but when is it do we ever stick to them and apply them to our lives. It is those that stick with it and come through the end can really define themselves and who they really are. One does not need to be religious to understand this principle. The film captures that briliantly using the war as a backdrop, but isn't life a war? Don't we need to make decisions and every move we make will test us? As it tested Desmond. I saw some of the most brutal action sequences since 'Saving Private Ryan'. It was terrifying and engaging to watch. The film is one of the best war films I've seen in recent memory. Mel has not lost his sense of direction."
+      "review1":"'Hacksaw Ridge' tells the story of Private Desmond Doss, who was a World War 2 field medic who chose not to carry a weapon in battle. When I first saw the trailer for Hacksaw Ridge I was really excited. Historical films have always been a favorite genre of mine. What hooked me about the story was a man who stuck to his beleifs and never under any circumstances did he give them up, even when his life was in danger.",
+      "review2":"Mel Gibson who has returned to the big screen once again does a great job allowing the veiwers to empathize with Desmond. We see who this man was and how he came to formulate the beleifs that he had. The stories structure has it centered around his beleif he came to adopt from the bible of 'Thou shall not kill'. We see Desmond grow as a child, then through boot camp where the tempatation to fight back or protect is clearly present. There were many times in the film where his beleif was tested. We always have our own philosophies, but when is it do we ever stick to them and apply them to our lives.",
+      "review3":"It is those who stick with it and come through the end can really define themselves and who they really are. One does not need to be religious to understand this principle. The film captures that briliantly using the war as a backdrop, but isn't life a war? Don't we need to make decisions and every move we make will test us? As it tested Desmond. I saw some of the most brutal action sequences since 'Saving Private Ryan'. It was terrifying and engaging to watch. The film is one of the best war films I've seen in recent memory. Mel has not lost his sense of direction."
       },
       {"Title":"Amanda Knox",
       "link":"https://www.youtube.com/embed/f5SFjSxzS7M",
-      "review":"Amanda Knox, from what I know from seeing her name in the mainstream media was responsible for brutally stabbing her roomate while studing abroad in Italy. The documentary is told from severl different perspectives, including Amanda Knox, the police chief and the journalist behind the reporting of the incident.     Before seeing the film I never looked into the story of Amanda Knox. Seeing her on TV and how the media projected her I assumed she was guilty and hiding the truth. As the story was unfolding I always had the thought that she could be lying to us, even though she had the look and perception of being innocent.     The filmmakers had their characters sit in the center and speaking directly to the camera. This setup is strikingly similar to that of Kurosawa's film 'Rashomon' where we have a court case and the characters confess to the judge, which in this case is us the audience. Trying to plead their innocnece. You don't know who is really telling the truth. This just shows us how are opnions can be easily manipulated by how information is delivered. We become gulible. In the case of Amanda Knox we thought she was a pervert and a brutal killer. It was this simple persuation and misinterpretation by the police and media that led to her arrest. We are capable of abandoning the truth with simple misinformation and incorrect perception.     We even see instances of that in the film when Amanda was being interogated by the police. Hitting her and repeating the questions to the point where she did not beleive herself. People don't want the truth because the truth or the fact does not align with their beleifs. Therefore people would prefer a different answer that fits with their own. Maybe it might make them look bad. Or it might not make a good headline. People want to be perceived and looked at based on their beleif system. It is during this process we cause harm to others and ourselves."
+      "review1":"Amanda Knox, from what I know from seeing her name in the mainstream media was responsible for brutally stabbing her roomate while studing abroad in Italy. The documentary is told from severl different perspectives, including Amanda Knox, the police chief and the journalist behind the reporting of the incident.",
+      "review2":"Before seeing the film I never looked into the story of Amanda Knox. Seeing her on TV and how the media projected her I assumed she was guilty and hiding the truth. As the story was unfolding I always had the thought that she could be lying to us, even though she had the look and perception of being innocent.",
+      "review3":"The filmmakers had their characters sit in the center and speaking directly to the camera. This setup is strikingly similar to that of Kurosawa's film 'Rashomon' where we have a court case and the characters confess to the judge, which in this case is us the audience. Trying to plead their innocnece. You don't know who is really telling the truth. This just shows us how are opnions can be easily manipulated by how information is delivered. We become gulible. In the case of Amanda Knox we thought she was a pervert and a brutal killer. It was this simple persuation and misinterpretation by the police and media that led to her arrest. We are capable of abandoning the truth with simple misinformation and incorrect perception.",
+      "review4":"We even see instances of that in the film when Amanda was being interogated by the police. Hitting her and repeating the questions to the point where she did not beleive herself. People don't want the truth because the truth or the fact does not align with their beleifs. Therefore people would prefer a different answer that fits with their own. Maybe it might make them look bad. Or it might not make a good headline. People want to be perceived and looked at based on their beleif system. It is during this process we cause harm to others and ourselves."
       },
       {"Title":"St. Vincent",
       "link":"https://www.youtube.com/embed/9dP5lJnJHXg",
@@ -191,14 +196,47 @@ console.log(films);
           }
         }
       };
-      info.findReview = function(films){
+      info.findReview1 = function(films){
         for(var i = 0; i < films.length; i++){
           if(films[i].Title === response.data.Title){
-            info.review = films[i].review;
+            info.review1 = films[i].review1;
           }
         }
       };
-      info.findReview(films);
+      info.findReview2 = function(films){
+        for(var i = 0; i < films.length; i++){
+          if(films[i].Title === response.data.Title){
+            info.review2 = films[i].review2;
+          }
+        }
+      };
+      info.findReview3 = function(films){
+        for(var i = 0; i < films.length; i++){
+          if(films[i].Title === response.data.Title){
+            info.review3 = films[i].review3;
+          }
+        }
+      };
+      info.findReview4 = function(films){
+        for(var i = 0; i < films.length; i++){
+          if(films[i].Title === response.data.Title){
+            info.review4 = films[i].review4;
+          }
+        }
+      };
+      info.findReview5 = function(films){
+        for(var i = 0; i < films.length; i++){
+          if(films[i].Title === response.data.Title){
+            info.review5 = films[i].review5;
+          }
+        }
+      };
+
+      info.findReview1(films);
+      info.findReview2(films);
+      info.findReview3(films);
+      info.findReview4(films);
+      info.findReview5(films);
       info.findLink(films);
       return info;
     });

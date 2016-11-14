@@ -1,0 +1,31 @@
+<main>
+<div class="reviews">
+    <h3>CONTACT US</h3>
+</div>
+<div class="contact-wrapper">
+    <div class="contact-form">
+      <br>
+        <h3>
+            CONTACT FORM</h3>
+            <br>
+        First Name:
+        <input placeholder="First Name" ng-model="fn">
+        <br>
+        Last Name:
+        <input placeholder="Last Name" ng-model="ln">
+        <br>
+        Email:
+        <input placeholder="Email" ng-model="email">
+        <br>
+        Message:
+        <textarea placeholder="Message" ng-model="msg"></textarea>
+        <div class="button-wrapper" ng-click="storeMsg(fn, ln, email, msg)">
+            <h6 ng-click="show = !show">SUBMIT</h6>
+        </div>
+        <div class="msg-indicator" ng-show="show">
+          <br>
+          <p>Thank you for your message! We will respond within 1 business day.</p>
+        </div>
+    </div>
+</div>
+</main>

@@ -153,6 +153,7 @@ iframe{
 
 .film-info p{
   font-size: 15px;
+  padding-top: 10px;
 }
 
 .film-info h7{
@@ -171,10 +172,10 @@ footer{
 
 @media (max-width: 1600px){
   .trailer{
-    width: 53vw;
+    width: 51.5vw;
   }
   iframe{
-    width: 53vw;
+    width: 51.5vw;
   }
   .media-container{
     width: 90vw;
@@ -183,10 +184,10 @@ footer{
 
 @media (max-width: 1425px){
   .trailer{
-    width: 51vw;
+    width: 49vw;
   }
   iframe{
-    width: 51vw;
+    width: 49vw;
   }
   #print{
     right: 200px;
@@ -195,10 +196,10 @@ footer{
 
 @media (max-width: 1200px){
   .trailer{
-    width: 48vw;
+    width: 47vw;
   }
   iframe{
-    width: 48vw;
+    width: 47vw;
   }
   #print{
     right: 170px;
