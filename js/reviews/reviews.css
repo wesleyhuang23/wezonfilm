@@ -69,7 +69,7 @@ a {
 
 .trailer{
   height: 550px;
-  width: 58vw;
+  width: 57.5vw;
   padding-left: 15px;
   /*border: 1px solid green;*/
   display: flex;
@@ -121,6 +121,7 @@ iframe{
 
 #side{
   height:550px;
+  width: 360px;
   padding-left: 10px;
 }
 
@@ -129,6 +130,7 @@ iframe{
   height: auto;
   text-align: justify;
   padding: 30px;
+  position: relative;
 }
 
 .review {
