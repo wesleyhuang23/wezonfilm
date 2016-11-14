@@ -15,6 +15,10 @@ header{
   align-items: center;
 }
 
+main{
+  width: 100vw;
+}
+
 button{
   background: transparent;
   border: none !important;
@@ -64,9 +68,9 @@ a {
 }
 
 .trailer{
-  height: 400px;
+  height: 550px;
   width: 58vw;
-  padding-left: 35px;
+  padding-left: 15px;
   /*border: 1px solid green;*/
   display: flex;
   justify-content: flex-end;
@@ -86,9 +90,11 @@ iframe{
   height: 30px;
   width: 150px;
   background-color:gray;
+  transition: color .5s;
+  transition-delay: color .5s;
   position: absolute;
   right: 250px;
-  top: 700px;
+  top: 815px;
 }
 
 #print p {
@@ -101,7 +107,7 @@ iframe{
 
 .wrapper {
   height: auto;
-  width: 77.5vw;
+  width: 81.5vw;
   margin: 40px;
   background-color: #AFAB97;
   padding: 15px;
@@ -114,7 +120,7 @@ iframe{
 }
 
 #side{
-  height:400px;
+  height:550px;
   padding-left: 10px;
 }
 
@@ -141,8 +147,16 @@ iframe{
   font-weight: 500;
 }
 
+.film-info{
+    padding: 10px;
+}
+
 .film-info p{
   font-size: 15px;
+}
+
+.film-info h7{
+  font-size: 20px;
 }
 
 .search {
@@ -188,6 +202,12 @@ footer{
   }
   #print{
     right: 170px;
+  }
+  .new-fav h3{
+    font-size: 40px;
+  }
+  .logo{
+    font-size: 40px;
   }
 }
 }

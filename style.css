@@ -91,6 +91,8 @@ h3{
   padding-bottom: 20px;
   text-align: center;
   position: relative;
+  transition: text-decoration 5s;
+  transition-delay: text-decoration 5s;
 }
 
 .nav-items p:hover{
@@ -169,6 +171,8 @@ video{
   padding: 20px;
   padding-bottom: 50px;
   text-align: center;
+  transition: background-color .5s;
+  transition-delay: background-color .5s;
 }
 
 .film-display-home img{
@@ -220,7 +224,7 @@ figcaption{
 }
 
 .about-me{
-  width: 550px;
+  width: 600px;
   height: auto;
   padding-left: 70px;
 }
@@ -350,10 +354,38 @@ LIBRARY VIEW
   text-decoration: underline;
 }
 
+/*===============
+library end
+===============*/
+
 footer{
   background: black;
   height:30vh;
   width: 100vw;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.nav-items-footer{
+  position: absolute;
+  left: 300px;
+}
+
+.nav-items-footer h3{
+  font-size: 15px;
+  color: gray;
+}
+
+.nav-items-footer p{
+  font-size: 15px;
+  color: white;
+  transition: color .5s;
+  transition-delay: color .5s;
+}
+
+.nav-items-footer p:hover{
+  color: red;
 }
 
 @media (max-width: 1670px){
@@ -449,8 +481,13 @@ footer{
     background-position: center;
     position: relative;
   }
+  .new-fav h3{
+    font-size: 30px;
+  }
+  .logo{
+    font-size: 30px;
+  }
 }
-
 
 
 @media (max-width: 575px){
