@@ -41,18 +41,23 @@
       <br>
       <br>
       <div class="film-info">
-        <h7>Director</h7>
+        <div class="first-four">
+        <h7>Directed by</h7>
         <p>{{filmDetail.director}}</p>
         <br>
-        <h7>Writer</h7>
+        <h7>Written by</h7>
         <p>{{filmDetail.writer}}</p>
         <br>
         <h7>Cast</h7>
+        <div id="actors">
         <p>{{filmDetail.actors}}</p>
+        </div>
         <br>
         <h7>Genre</h7>
         <p>{{filmDetail.genre}}</p>
         <br>
+      </div>
+        <div class="second-four">
         <h7>Country</h7>
         <p>{{filmDetail.country}}</p>
         <br>
@@ -64,7 +69,15 @@
         <br>
         <h7>Release Date</h7>
         <p>{{filmDetail.release}}</p>
+        <br>
       </div>
+
+      </div>
+      <div class='plot'>
+        <h7>Plot</h7>
+        <p>{{filmDetail.plot}}
+      </div>
+
   </div>
   </div>
 

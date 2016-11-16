@@ -149,7 +149,6 @@ console.log(films);
     }).then(function(response){
       var films = [
       {"Title":"Billy Lynn's Long Halftime Walk",
-      "link":"https://www.youtube.com/embed/mUULFJ_I048",
       "review1":"",
       "review2":"",
       "review3":"",
@@ -157,7 +156,6 @@ console.log(films);
       "review5":""
       },
       {"Title":"Doctor Strange",
-      "link":"https://www.youtube.com/embed/HSzx-zryEgM",
       "review1":"Marvel brings another super hero to the big screen. This time it is Doctor Strange. Our hero began his journey as an aclaimed  neurosurgeon, who loses control over his hands during a terrible car accident. Doing all he can to treat it. When western medicine as failed him he is directed to Kamar-Taj, Nepal to seek the Ancient One who is known to heal another man with a similar condition.",
       "review2":"Doctor Strange is not strange at all compared to other marvel super heros. It is a story of the hero's journey. We see strange, once living his lavish lifestyle in New York city and through a series of circumstances propels him into a journey that tranforms him. Like Tony Stark who once lived the lavish life saw the injustice he was controbuting with his own line of weapons. What makes Marvel super hero movies work is that each super hero has their own unique story to becoming a hero. Most of the time they are not suited to live in the society that is provided to them and need to take refuge elsewhere. Learning the skills from the Ancient one Stephen Strange is rushed into a world of chaos as he needs to protect the world from Kaecilius a previous pupil turned evil and wants to destroy the world. You know how it goes",
       "review3":"The visual effects are impressive in Docotr Strange. The magic and world bending scenes are great to watch, but I found myself having a hard time being engaged as if I almost seen this movie several times. I had a de javu momement as New York was once again the city that needed to be destoryed for another super hero to be put on the big screen. Inception like visual effects are cool, but so is the circus. They are only there to wow us but not invoke us. Docotor Strange is the new super hero around the block, but I feel as if I don't want another formal introduction.",
@@ -165,20 +163,17 @@ console.log(films);
       "review5":""
       },
       {"Title":"Hacksaw Ridge",
-      "link":"https://www.youtube.com/embed/s2-1hz1juBI",
       "review1":"'Hacksaw Ridge' tells the story of Private Desmond Doss, who was a World War 2 field medic who chose not to carry a weapon in battle. When I first saw the trailer for Hacksaw Ridge I was really excited. Historical films have always been a favorite genre of mine. What hooked me about the story was a man who stuck to his beleifs and never under any circumstances did he give them up, even when his life was in danger.",
       "review2":"Mel Gibson who has returned to the big screen once again does a great job allowing the veiwers to empathize with Desmond. We see who this man was and how he came to formulate the beleifs that he had. The stories structure has it centered around his beleif he came to adopt from the bible of 'Thou shall not kill'. We see Desmond grow as a child, then through boot camp where the tempatation to fight back or protect is clearly present. There were many times in the film where his beleif was tested. We always have our own philosophies, but when is it do we ever stick to them and apply them to our lives.",
       "review3":"It is those who stick with it and come through the end can really define themselves and who they really are. One does not need to be religious to understand this principle. The film captures that briliantly using the war as a backdrop, but isn't life a war? Don't we need to make decisions and every move we make will test us? As it tested Desmond. I saw some of the most brutal action sequences since 'Saving Private Ryan'. It was terrifying and engaging to watch. The film is one of the best war films I've seen in recent memory. Mel has not lost his sense of direction."
       },
       {"Title":"Amanda Knox",
-      "link":"https://www.youtube.com/embed/f5SFjSxzS7M",
       "review1":"Amanda Knox, from what I know from seeing her name in the mainstream media was responsible for brutally stabbing her roomate while studing abroad in Italy. The documentary is told from severl different perspectives, including Amanda Knox, the police chief and the journalist behind the reporting of the incident.",
       "review2":"Before seeing the film I never looked into the story of Amanda Knox. Seeing her on TV and how the media projected her I assumed she was guilty and hiding the truth. As the story was unfolding I always had the thought that she could be lying to us, even though she had the look and perception of being innocent.",
       "review3":"The filmmakers had their characters sit in the center and speaking directly to the camera. This setup is strikingly similar to that of Kurosawa's film 'Rashomon' where we have a court case and the characters confess to the judge, which in this case is us the audience. Trying to plead their innocnece. You don't know who is really telling the truth. This just shows us how are opnions can be easily manipulated by how information is delivered. We become gulible. In the case of Amanda Knox we thought she was a pervert and a brutal killer. It was this simple persuation and misinterpretation by the police and media that led to her arrest. We are capable of abandoning the truth with simple misinformation and incorrect perception.",
       "review4":"We even see instances of that in the film when Amanda was being interogated by the police. Hitting her and repeating the questions to the point where she did not beleive herself. People don't want the truth because the truth or the fact does not align with their beleifs. Therefore people would prefer a different answer that fits with their own. Maybe it might make them look bad. Or it might not make a good headline. People want to be perceived and looked at based on their beleif system. It is during this process we cause harm to others and ourselves."
       },
       {"Title":"St. Vincent",
-      "link":"https://www.youtube.com/embed/9dP5lJnJHXg",
       "review1":"",
       "review2":"",
       "review3":"",
@@ -186,7 +181,6 @@ console.log(films);
       "review5":""
       },
       {"Title":"Come Drink with Me",
-      "link":"https://www.youtube.com/embed/C4SMPQyiLy4",
       "review1":"",
       "review2":"",
       "review3":"",
@@ -194,7 +188,6 @@ console.log(films);
       "review5":""
       },
       {"Title":"The Kingdom of Dreams and Madness",
-      "link":"https://www.youtube.com/embed/24wViGZKVu8",
       "review1":"",
       "review2":"",
       "review3":"",
@@ -202,7 +195,6 @@ console.log(films);
       "review5":""
       },
       {"Title":"Sully",
-      "link":"https://www.youtube.com/embed/mjKEXxO2KNE",
       "review1":"",
       "review2":"",
       "review3":"",
@@ -227,6 +219,7 @@ console.log(films);
       info.language = response.data.Language;
       info.country = response.data.Country;
       info.release = response.data.Released;
+      info.plot = response.data.Plot;
       // info.findLink = function(films){
       //   console.log(films[3].Title);
       //   for(var i = 0; i < films.length; i++){
