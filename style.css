@@ -158,12 +158,14 @@ video{
   align-items: center;
   height: 5vh;
   width: 100vw;
+  position: relative;
 }
 
 .posters{
   height: auto;
   text-align: center;
   width: 100vw;
+  position: relative;
 }
 
 .film-display-home{
@@ -173,11 +175,19 @@ video{
   text-align: center;
   transition: background-color .5s;
   transition-delay: background-color .5s;
+  transition: transform 1s;
 }
 
 .film-display-home img{
   height: 340px;
   padding:5px;
+
+}
+
+.film-display-home:hover{
+  transform: scale(1.07);
+  padding: 6px;
+  padding-bottom: 35px;
 }
 
 .name{
