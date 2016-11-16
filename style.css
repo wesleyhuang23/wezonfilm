@@ -329,6 +329,8 @@ LIBRARY VIEW
   display: inline-block;
   text-align: center;
   z-index: -1;
+  transition: background-color .5s;
+  transition-delay: background-color .5s;
 }
 
 .film-display:hover{
@@ -361,14 +363,14 @@ library end
 /*================
 contact view
 ================*/
-.name{
+.name-contact{
   width: 800px;
 }
 .contact-wrapper{
   display: flex;
   justify-content: center;
   padding-bottom: 200px;
-  width: 50vw;
+  width: 0vw;
 }
 
 .contact-form{

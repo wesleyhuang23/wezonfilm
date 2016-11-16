@@ -124,6 +124,22 @@ console.log(films);
     return films;
   };
 
+  this.getTrailer = function(id){
+    console.log('reached service');
+    return $http({
+      method:'GET',
+      url: 'https://api.themoviedb.org/3/movie/' + id + '/videos?api_key=8eecf03080f34edf303e14b5f1476653&language=en-US'
+    }).then(function(response){
+      console.log(response.data.results);
+      var trailers = response.data.results;
+      var results = trailers.filter(function(trailers){
+        return trailers.key === "9r8LG_lCbac" || trailers.name === 'Official Trailer #2' || trailers.name === "Doctor Strange Official Trailer 2" || trailers.key === 'C4SMPQyiLy4' || trailers.name.includes('2') || trailers.name.includes('#') || (trailers.name.includes('Trailer') && trailers.type === 'Trailer');
+      });
+      console.log(results);
+      return results;
+    });
+  };
+
   this.getFilmDetails = function(id){
     console.log(id);
     console.log('reached service');
@@ -134,11 +150,19 @@ console.log(films);
       var films = [
       {"Title":"Billy Lynn's Long Halftime Walk",
       "link":"https://www.youtube.com/embed/mUULFJ_I048",
-      "review":""
+      "review1":"",
+      "review2":"",
+      "review3":"",
+      "review4":"",
+      "review5":""
       },
       {"Title":"Doctor Strange",
       "link":"https://www.youtube.com/embed/HSzx-zryEgM",
-      "review":""
+      "review1":"Marvel brings another super hero to the big screen. This time it is Doctor Strange. Our hero began his journey as an aclaimed  neurosurgeon, who loses control over his hands during a terrible car accident. Doing all he can to treat it. When western medicine as failed him he is directed to Kamar-Taj, Nepal to seek the Ancient One who is known to heal another man with a similar condition.",
+      "review2":"Doctor Strange is not strange at all compared to other marvel super heros. It is a story of the hero's journey. We see strange, once living his lavish lifestyle in New York city and through a series of circumstances propels him into a journey that tranforms him. Like Tony Stark who once lived the lavish life saw the injustice he was controbuting with his own line of weapons. What makes Marvel super hero movies work is that each super hero has their own unique story to becoming a hero. Most of the time they are not suited to live in the society that is provided to them and need to take refuge elsewhere. Learning the skills from the Ancient one Stephen Strange is rushed into a world of chaos as he needs to protect the world from Kaecilius a previous pupil turned evil and wants to destroy the world. You know how it goes",
+      "review3":"The visual effects are impressive in Docotr Strange. The magic and world bending scenes are great to watch, but I found myself having a hard time being engaged as if I almost seen this movie several times. I had a de javu momement as New York was once again the city that needed to be destoryed for another super hero to be put on the big screen. Inception like visual effects are cool, but so is the circus. They are only there to wow us but not invoke us. Docotor Strange is the new super hero around the block, but I feel as if I don't want another formal introduction.",
+      "review4":"",
+      "review5":""
       },
       {"Title":"Hacksaw Ridge",
       "link":"https://www.youtube.com/embed/s2-1hz1juBI",
@@ -155,19 +179,35 @@ console.log(films);
       },
       {"Title":"St. Vincent",
       "link":"https://www.youtube.com/embed/9dP5lJnJHXg",
-      "review":""
+      "review1":"",
+      "review2":"",
+      "review3":"",
+      "review4":"",
+      "review5":""
       },
       {"Title":"Come Drink with Me",
       "link":"https://www.youtube.com/embed/C4SMPQyiLy4",
-      "review":""
+      "review1":"",
+      "review2":"",
+      "review3":"",
+      "review4":"",
+      "review5":""
       },
       {"Title":"The Kingdom of Dreams and Madness",
       "link":"https://www.youtube.com/embed/24wViGZKVu8",
-      "review":""
+      "review1":"",
+      "review2":"",
+      "review3":"",
+      "review4":"",
+      "review5":""
       },
       {"Title":"Sully",
       "link":"https://www.youtube.com/embed/mjKEXxO2KNE",
-      "review":""
+      "review1":"",
+      "review2":"",
+      "review3":"",
+      "review4":"",
+      "review5":""
       },
 
 
@@ -187,15 +227,15 @@ console.log(films);
       info.language = response.data.Language;
       info.country = response.data.Country;
       info.release = response.data.Released;
-      info.findLink = function(films){
-        console.log(films[3].Title);
-        for(var i = 0; i < films.length; i++){
-          console.log(films[i].Title);
-          if(films[i].Title === response.data.Title){
-            info.link = films[i].link;
-          }
-        }
-      };
+      // info.findLink = function(films){
+      //   console.log(films[3].Title);
+      //   for(var i = 0; i < films.length; i++){
+      //     console.log(films[i].Title);
+      //     if(films[i].Title === response.data.Title){
+      //       info.link = films[i].link;
+      //     }
+      //   }
+      // };
       info.findReview1 = function(films){
         for(var i = 0; i < films.length; i++){
           if(films[i].Title === response.data.Title){
@@ -237,7 +277,7 @@ console.log(films);
       info.findReview3(films);
       info.findReview4(films);
       info.findReview5(films);
-      info.findLink(films);
+      //info.findLink(films);
       return info;
     });
 

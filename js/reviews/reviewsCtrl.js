@@ -14,6 +14,15 @@ angular.module('wezApp').controller('reviewsCtrl', function($scope, filmSvc, $st
     });
   };
 
+  $scope.getTrailer = function(id){
+    filmSvc.getTrailer(id).then(function(response){
+      $scope.trailer = 'https://www.youtube.com/embed/' + response[0].key;
+      console.log($scope.trailer);
+    });
+  };
+
   $scope.getFilmDetails(id);
+
+  $scope.getTrailer(id);
 
 });
