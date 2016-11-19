@@ -16,7 +16,12 @@ angular.module('wezApp').controller('reviewsCtrl', function($scope, filmSvc, $st
 
   $scope.getTrailer = function(id){
     filmSvc.getTrailer(id).then(function(response){
-      $scope.trailer = 'https://www.youtube.com/embed/' + response[0].key;
+      console.log(response);
+      var result = response.filter(function(response){
+        return response.type === 'Trailer';
+      });
+      console.log(result);
+      $scope.trailer = 'https://www.youtube.com/embed/' + result[0].key;
       console.log($scope.trailer);
     });
   };
