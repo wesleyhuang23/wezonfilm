@@ -155,6 +155,10 @@ iframe{
   flex-direction: column;
 }
 
+span{
+  font-size: 30px;
+  color: gray;
+}
 .film-info{
   /*border: 1px solid green;*/
     position: relative;
@@ -163,6 +167,14 @@ iframe{
     justify-content: space-between;
     padding: 10px;
     width: 50vw;
+}
+.first-four{
+  width: 33vw;
+}
+
+.second-four{
+  position: relative;
+  right: 10px;
 }
 .plot{
   padding: 10px;

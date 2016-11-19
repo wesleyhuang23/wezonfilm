@@ -6,4 +6,5 @@ angular.module('wezApp').controller('favCtrl', function($scope, filmSvc, $stateP
 
   $scope.getFavs();
 
+
 });

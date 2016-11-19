@@ -38,7 +38,7 @@ var favorites =
 [
 {
   "Title":"Mountains May Depart","Year":"2015",
-  "Poster":"http://67.media.tumblr.com/831fb9866f1cd765785cef3af8bfef83/tumblr_nvadtqU5Al1rce5tlo2_1280.jpg"
+  "Poster":"http://67.media.tumblr.com/831fb9866f1cd765785cef3af8bfef83/tumblr_nvadtqU5Al1rce5tlo2_1280.jpg","imdbID":"tt3740778"
 },
 {
   "Title":"Cruel Story of Youth","Year":"1960","Poster":"https://image.tmdb.org/t/p/w1280/itF3KhmSogKbzJ8Jvp8OtBxEfS9.jpg","imdbID":"tt0054286"
@@ -133,7 +133,7 @@ console.log(films);
       console.log(response.data.results);
       var trailers = response.data.results;
       var results = trailers.filter(function(trailers){
-        return trailers.key === "9r8LG_lCbac" || trailers.name === 'Official Trailer #2' || trailers.name === "Doctor Strange Official Trailer 2" || trailers.key === 'C4SMPQyiLy4' || trailers.name.includes('2') || trailers.name.includes('#') || (trailers.name.includes('Trailer') && trailers.type === 'Trailer');
+        return trailers.name !== trailers.name.includes('TV') || trailers.key === "9r8LG_lCbac" || trailers.key === '9XEh7arNSms' || trailers.name === 'Official Trailer #2' || trailers.name === "Doctor Strange Official Trailer 2" || trailers.key === 'C4SMPQyiLy4' || trailers.name.includes('2') || trailers.name.includes('#') || (trailers.name.includes('Trailer') && trailers.type === 'Trailer');
       });
       console.log(results);
       return results;

@@ -7,11 +7,11 @@
     </div>
     <div class="library-wrapper">
     <div class="library-content" ng-repeat="film in favorites | filter: titleFilter">
-      <a ui-sref="reviews({id:'{{films.imdbID}}'})">
+      <a ui-sref="reviews({id:'{{film.imdbID}}'})">
             <div class=film-display>
-                <div><a href="{{film.link}}"><img ng-src="{{film.Poster}}"></div>
+                <div><img ng-src="{{film.Poster}}"></div>
                 <div class='name-library'>{{film.Title}}
-                    ({{film.Year}})</div></a>
+                    ({{film.Year}})</div>
             </div>
           </a>
     </div>
