@@ -148,7 +148,7 @@ console.log(films);
       console.log(response.data.results);
       var trailers = response.data.results;
       var results = trailers.filter(function(trailers){
-        return trailers.name !== trailers.name.includes('TV') || trailers.key === "9r8LG_lCbac" || trailers.key === '9XEh7arNSms' || trailers.name === 'Official Trailer #2' || trailers.name === "Doctor Strange Official Trailer 2" || trailers.key === 'C4SMPQyiLy4' || trailers.name.includes('2') || trailers.name.includes('#') || (trailers.name.includes('Trailer') && trailers.type === 'Trailer');
+        return trailers.key === "9r8LG_lCbac" || trailers.key === '9XEh7arNSms' || trailers.name === 'Official Trailer #2' || trailers.name === "Doctor Strange Official Trailer 2" || trailers.key === 'C4SMPQyiLy4' || trailers.name.includes('2') || trailers.name.includes('#') || (trailers.name.includes('Trailer') && trailers.type === 'Trailer');
       });
       console.log(results);
       return results;
