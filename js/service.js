@@ -1,6 +1,6 @@
 angular.module('wezApp').service('filmSvc', function($http, $stateParams){
 var films = [
-
+  {"Title":"Kung Fu Panda 3","Poster":"https://images-na.ssl-images-amazon.com/images/M/MV5BMTUyNzgxNjg2M15BMl5BanBnXkFtZTgwMTY1NDI1NjE@._V1_SX300.jpg","imdbID":"tt2267968", "Year":"2016"},
 {"Title":"Billy Lynn's Long Halftime Walk","Year":"2016","Poster":"https://images-na.ssl-images-amazon.com/images/M/MV5BMTY1NDI1Nzg4OF5BMl5BanBnXkFtZTgwNjYxOTg4ODE@._V1_SX300.jpg",
 "imdbID":"tt2513074"
 },
@@ -121,7 +121,7 @@ var favorites =
 {"Title":"Mulholland Drive","Year":"2001","Rated":"R","Released":"19 Oct 2001","Runtime":"147 min","Genre":"Drama, Mystery, Thriller","Director":"David Lynch","Writer":"David Lynch","Actors":"Naomi Watts, Jeanne Bates, Dan Birnbaum, Laura Harring","Plot":"After a car wreck on the winding Mulholland Drive renders a woman amnesiac, she and a perky Hollywood-hopeful search for clues and answers across Los Angeles in a twisting venture beyond dreams and reality.","Language":"English, Spanish","Country":"France, USA","Awards":"Nominated for 1 Oscar. Another 46 wins & 56 nominations.","Poster":"https://images-na.ssl-images-amazon.com/images/M/MV5BNWM2MDZmMDgtYjViOS00YzBmLWE4YzctMDMyYTQ2YTc4MmVkXkEyXkFqcGdeQXVyNDk3NzU2MTQ@._V1_SX300.jpg","Metascore":"81","imdbRating":"8.0","imdbVotes":"242,922","imdbID":"tt0166924","Type":"movie","Response":"True"},
 {"Title":"The Skin I Live In","Year":"2011","Rated":"R","Released":"02 Sep 2011","Runtime":"120 min","Genre":"Crime, Drama, Thriller","Director":"Pedro Almodóvar","Writer":"Agustín Almodóvar (collaboration), Pedro Almodóvar, Thierry Jonquet (novel)","Actors":"Antonio Banderas, Elena Anaya, Marisa Paredes, Jan Cornet","Plot":"A brilliant plastic surgeon, haunted by past tragedies, creates a type of synthetic skin that withstands any kind of damage. His guinea pig: a mysterious and volatile woman who holds the key to his obsession.","Language":"Spanish","Country":"Spain","Awards":"Nominated for 1 Golden Globe. Another 26 wins & 64 nominations.","Poster":"https://images-na.ssl-images-amazon.com/images/M/MV5BMjMwOTYyNDY4NV5BMl5BanBnXkFtZTcwNDI1ODk0Ng@@._V1_SX300.jpg","Metascore":"70","imdbRating":"7.6","imdbVotes":"103,897","imdbID":"tt1189073","Type":"movie","Response":"True"},
 {"Title":"Grizzly Man","Year":"2005","Rated":"R","Released":"02 Sep 2005","Runtime":"103 min","Genre":"Documentary, Biography","Director":"Werner Herzog","Writer":"Werner Herzog","Actors":"Werner Herzog, Carol Dexter, Val Dexter, Sam Egli","Plot":"A devastating and heartrending take on grizzly bear activists Timothy Treadwell and Amie Huguenard, who were killed in October of 2003 while living among grizzlies in Alaska.","Language":"English","Country":"USA","Awards":"21 wins & 14 nominations.","Poster":"https://images-na.ssl-images-amazon.com/images/M/MV5BODc3NTAxMTY1MV5BMl5BanBnXkFtZTcwOTE4NjUzMw@@._V1_SX300.jpg","Metascore":"87","imdbRating":"7.8","imdbVotes":"41,703","imdbID":"tt0427312","Type":"movie","Response":"True"},
-{"Title":"The Eccentric Mr Turner","Year":"2015","Rated":"N/A","Released":"06 Feb 2015","Runtime":"25 min","Genre":"Short","Director":"Mike Booth","Writer":"Gary Taylor","Actors":"Gary Taylor, Tina Parry, Graham Shurvington, Anthony Booth","Plot":"N/A","Language":"English","Country":"UK","Awards":"N/A","Poster":"https://s-media-cache-ak0.pinimg.com/originals/38/32/5a/38325afc015a020c5fe7754b96a0f30f.jpg","Metascore":"N/A","imdbRating":"N/A","imdbVotes":"N/A","imdbID":"tt4056318","Type":"movie","Response":"True"},
+{"Title":"Mr. Turner","Year":"2014","Rated":"R","Released":"31 Oct 2014","Runtime":"150 min","Genre":"Biography, Drama, History","Director":"Mike Leigh","Writer":"Mike Leigh","Actors":"Timothy Spall, Paul Jesson, Dorothy Atkinson, Marion Bailey","Plot":"An exploration of the last quarter century of the great, if eccentric, British painter J.M.W. Turner's life.","Language":"English","Country":"UK, France, Germany","Awards":"Nominated for 4 Oscars. Another 19 wins & 57 nominations.","Poster":"https://images-na.ssl-images-amazon.com/images/M/MV5BMjUzNTg0MzM3NF5BMl5BanBnXkFtZTgwNDg3NTY5MjE@._V1_SX300.jpg","Metascore":"94","imdbRating":"6.8","imdbVotes":"18,497","imdbID":"tt2473794","Type":"movie","Response":"True"},
 {"Title":"Tampopo","Year":"1985","Rated":"N/A","Released":"01 Sep 1987","Runtime":"114 min","Genre":"Comedy","Director":"Jûzô Itami","Writer":"Jûzô Itami","Actors":"Tsutomu Yamazaki, Nobuko Miyamoto, Kôji Yakusho, Ken Watanabe","Plot":"A truck driver stops at a small family-run noodle shop and decides to help its fledgling business. The story is intertwined with various vignettes about the relationship of love and food.","Language":"Japanese","Country":"Japan","Awards":"5 wins & 4 nominations.","Poster":"https://images-na.ssl-images-amazon.com/images/M/MV5BOTI1NTYxNjg5Ml5BMl5BanBnXkFtZTcwMTM5ODI3Mw@@._V1_SX300.jpg","Metascore":"N/A","imdbRating":"7.9","imdbVotes":"9,614","imdbID":"tt0092048","Type":"movie","Response":"True"},
 {"Title":"Harakiri","Year":"1962","Rated":"NOT RATED","Released":"04 Aug 1964","Runtime":"133 min","Genre":"Action, Drama, History","Director":"Masaki Kobayashi","Writer":"Shinobu Hashimoto (screenplay), Yasuhiko Takiguchi (novel), Yasuhiko Takiguchi","Actors":"Tatsuya Nakadai, Akira Ishihama, Shima Iwashita, Tetsurô Tanba","Plot":"An elder ronin samurai arrives at a feudal lord's home and requests an honorable place to commit suicide. But when the ronin inquires about a younger samurai who arrived before him things take an unexpected turn.","Language":"Japanese","Country":"Japan","Awards":"8 wins & 2 nominations.","Poster":"https://images-na.ssl-images-amazon.com/images/M/MV5BMTg2MzMwNjk5Ml5BMl5BanBnXkFtZTgwNTQwOTkxMTE@._V1_SX300.jpg","Metascore":"N/A","imdbRating":"8.7","imdbVotes":"19,162","imdbID":"tt0056058","Type":"movie","Response":"True"}
 
@@ -163,7 +163,12 @@ console.log(films);
       url: 'http://www.omdbapi.com/?i=' + id + '&plot=short&r=json'
     }).then(function(response){
       var films = [
+        {"Title":"Mr. Turner",
+        "imdbID":"tt2473794",
+          "review1":"Mr. Turner is an artist in England during the 1800’s. I am not an expert so can’t really give any concrete details. He is not a man that is what you can call handsome, but he is a man that can capture great beauty with his paint brush. As presented in his canvases. A film that focuses on the idea of inner beauty. Only the people that can understand this beauty is Turner himself, his father and a widowed lady that he falls in loves with. People of society see his painting as vile with no structure or formula. They can only see the surface what the true meaning of art is. Genius is seen as trivial. Inteligence is seen as as stupidity",
+"review2":"When a man approaches to buy his painting for 100,000 pounds he firmly rejects his offer as he only offers his works of art to the public of England. After the death of his father he expresses himself with the painting of a prostitute asking her to pose in a gesture of grief. Art comes from the expression of the human so and Mike Leigh is able to capture this moment with great delicacy."},
       {"Title":"Billy Lynn's Long Halftime Walk",
+      "imdbID":"tt2513074",
       "review1":"",
       "review2":"",
       "review3":"",
@@ -178,11 +183,13 @@ console.log(films);
       "review5":""
       },
       {"Title":"Hacksaw Ridge",
+      "imdbID":"tt2119532",
       "review1":"'Hacksaw Ridge' tells the story of Private Desmond Doss, who was a World War 2 field medic who chose not to carry a weapon in battle. When I first saw the trailer for Hacksaw Ridge I was really excited. Historical films have always been a favorite genre of mine. What hooked me about the story was a man who stuck to his beleifs and never under any circumstances did he give them up, even when his life was in danger.",
       "review2":"Mel Gibson who has returned to the big screen once again does a great job allowing the veiwers to empathize with Desmond. We see who this man was and how he came to formulate the beleifs that he had. The stories structure has it centered around his beleif he came to adopt from the bible of 'Thou shall not kill'. We see Desmond grow as a child, then through boot camp where the tempatation to fight back or protect is clearly present. There were many times in the film where his beleif was tested. We always have our own philosophies, but when is it do we ever stick to them and apply them to our lives.",
       "review3":"It is those who stick with it and come through the end can really define themselves and who they really are. One does not need to be religious to understand this principle. The film captures that briliantly using the war as a backdrop, but isn't life a war? Don't we need to make decisions and every move we make will test us? As it tested Desmond. I saw some of the most brutal action sequences since 'Saving Private Ryan'. It was terrifying and engaging to watch. The film is one of the best war films I've seen in recent memory. Mel has not lost his sense of direction."
       },
       {"Title":"Amanda Knox",
+      "imdbID":"tt5952332",
       "review1":"Amanda Knox, from what I know from seeing her name in the mainstream media was responsible for brutally stabbing her roomate while studing abroad in Italy. The documentary is told from severl different perspectives, including Amanda Knox, the police chief and the journalist behind the reporting of the incident.",
       "review2":"Before seeing the film I never looked into the story of Amanda Knox. Seeing her on TV and how the media projected her I assumed she was guilty and hiding the truth. As the story was unfolding I always had the thought that she could be lying to us, even though she had the look and perception of being innocent.",
       "review3":"The filmmakers had their characters sit in the center and speaking directly to the camera. This setup is strikingly similar to that of Kurosawa's film 'Rashomon' where we have a court case and the characters confess to the judge, which in this case is us the audience. Trying to plead their innocnece. You don't know who is really telling the truth. This just shows us how are opnions can be easily manipulated by how information is delivered. We become gulible. In the case of Amanda Knox we thought she was a pervert and a brutal killer. It was this simple persuation and misinterpretation by the police and media that led to her arrest. We are capable of abandoning the truth with simple misinformation and incorrect perception.",
@@ -193,9 +200,11 @@ console.log(films);
       "review2":"",
       "review3":"",
       "review4":"",
-      "review5":""
+      "review5":"",
+      "imdbID":"tt2170593"
       },
       {"Title":"Come Drink with Me",
+      "imdbID":"tt0059079",
       "review1":"",
       "review2":"",
       "review3":"",
@@ -203,6 +212,7 @@ console.log(films);
       "review5":""
       },
       {"Title":"The Kingdom of Dreams and Madness",
+      "imdbID":"tt3204392",
       "review1":"",
       "review2":"",
       "review3":"",
@@ -210,6 +220,7 @@ console.log(films);
       "review5":""
       },
       {"Title":"Sully",
+      "imdbID":"tt3263904",
       "review1":"",
       "review2":"",
       "review3":"",
@@ -246,35 +257,35 @@ console.log(films);
       // };
       info.findReview1 = function(films){
         for(var i = 0; i < films.length; i++){
-          if(films[i].Title === response.data.Title){
+          if(films[i].imdbID === response.data.imdbID){
             info.review1 = films[i].review1;
           }
         }
       };
       info.findReview2 = function(films){
         for(var i = 0; i < films.length; i++){
-          if(films[i].Title === response.data.Title){
+          if(films[i].imdbID === response.data.imdbID){
             info.review2 = films[i].review2;
           }
         }
       };
       info.findReview3 = function(films){
         for(var i = 0; i < films.length; i++){
-          if(films[i].Title === response.data.Title){
+          if(films[i].imdbID === response.data.imdbID){
             info.review3 = films[i].review3;
           }
         }
       };
       info.findReview4 = function(films){
         for(var i = 0; i < films.length; i++){
-          if(films[i].Title === response.data.Title){
+          if(films[i].imdbID === response.data.imdbID){
             info.review4 = films[i].review4;
           }
         }
       };
       info.findReview5 = function(films){
         for(var i = 0; i < films.length; i++){
-          if(films[i].Title === response.data.Title){
+          if(films[i].imdbID === response.data.imdbID){
             info.review5 = films[i].review5;
           }
         }
