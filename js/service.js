@@ -1,5 +1,7 @@
 angular.module('wezApp').service('filmSvc', function($http, $stateParams){
 var films = [
+  {"Title":"Arrival","Year":"2016","Poster":"https://images-na.ssl-images-amazon.com/images/M/MV5BMTExMzU0ODcxNDheQTJeQWpwZ15BbWU4MDE1OTI4MzAy._V1_SX300.jpg","imdbID":"tt2543164"
+},
   {"Title":"Kung Fu Panda 3","Poster":"https://images-na.ssl-images-amazon.com/images/M/MV5BMTUyNzgxNjg2M15BMl5BanBnXkFtZTgwMTY1NDI1NjE@._V1_SX300.jpg","imdbID":"tt2267968", "Year":"2016"},
 {"Title":"Billy Lynn's Long Halftime Walk","Year":"2016","Poster":"https://images-na.ssl-images-amazon.com/images/M/MV5BMTY1NDI1Nzg4OF5BMl5BanBnXkFtZTgwNjYxOTg4ODE@._V1_SX300.jpg",
 "imdbID":"tt2513074"
@@ -12,7 +14,6 @@ var films = [
 },
 {"Title":"Amanda Knox","Year":"2016",
 "Poster":"https://images-na.ssl-images-amazon.com/images/M/MV5BNTY5NjE4MTQyNF5BMl5BanBnXkFtZTgwMzg1NjEwMDI@._V1_SX300.jpg",
-"link":"https://www.youtube.com/watch?v=f5SFjSxzS7M",
 "imdbID":"tt5952332"
 },
 {"Title":"St. Vincent","Year":"2014",
@@ -148,7 +149,7 @@ console.log(films);
       console.log(response.data.results);
       var trailers = response.data.results;
       var results = trailers.filter(function(trailers){
-        return trailers.key === "9r8LG_lCbac" || trailers.key === '9XEh7arNSms' || trailers.name === 'Official Trailer #2' || trailers.name === "Doctor Strange Official Trailer 2" || trailers.key === 'C4SMPQyiLy4' || trailers.name.includes('2') || trailers.name.includes('#') || (trailers.name.includes('Trailer') && trailers.type === 'Trailer');
+        return trailers.name === 'The Birdcage (1996)' || trailers.key === 'kCFaTffMMeE' || (trailers.name.includes('Trailer') && trailers.type === 'Trailer');
       });
       console.log(results);
       return results;
