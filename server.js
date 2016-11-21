@@ -14,12 +14,16 @@ var db = app.get('db');
 var controller = require('./controller.js');
 
 db.create_films(function(err, films){
-  console.log(err);
   console.log('films table init');
+});
+
+db.create_favorites(function(err, films){
+  console.log('favs table init');
 });
 
 app.get('/', controller.get_films);
 app.get('/library', controller.get_library);
+app.get('/favorites', controller.get_favorites);
 
 app.listen(3000, function(){
   console.log('listening on port 3000...');

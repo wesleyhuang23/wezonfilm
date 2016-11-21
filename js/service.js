@@ -96,7 +96,14 @@ var favorites =
 ];
 
 this.getFavs = function(){
-  return favorites;
+  console.log('favorites node reached');
+  return $http({
+    method: 'GET',
+    url: 'http://localhost:3000/favorites'
+  }).then(function(response){
+    console.log(response.data);
+    return response.data;
+  });
 };
 
 this.getFilm = function(){

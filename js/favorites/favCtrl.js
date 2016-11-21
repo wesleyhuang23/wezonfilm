@@ -1,6 +1,8 @@
 angular.module('wezApp').controller('favCtrl', function($scope, filmSvc, $stateParams){
   $scope.getFavs = function(){
-    $scope.favorites = filmSvc.getFavs();
+    filmSvc.getFavs().then(function(response){
+      $scope.favorites = response;
+    });
     console.log($scope.favorites);
   };
 
