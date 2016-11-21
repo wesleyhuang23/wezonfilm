@@ -5,6 +5,7 @@ var massive = require('massive');
 var connectionString = 'postges://wesleyhuang@localhost/wezonfilm';
 
 var app = module.exports = express();
+app.use(cors());
 app.use(bodyParser.json());
 var massiveInstance = massive.connectSync({connectionString : connectionString});
 
@@ -17,6 +18,8 @@ db.create_films(function(err, films){
   console.log('films table init');
 });
 
+app.get('/', controller.get_films);
+app.get('/library', controller.get_library);
 
 app.listen(3000, function(){
   console.log('listening on port 3000...');

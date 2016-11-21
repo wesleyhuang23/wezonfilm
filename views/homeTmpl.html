@@ -21,10 +21,10 @@
     <div class="posters">
       <div class=film-display-home ng-repeat="films in latestFilms track by $index">
         <!--({id:'{{films.imdbID}}'})-->
-        <a ui-sref="reviews({id:'{{films.imdbID}}'})">
-          <div><img ng-src="{{films.Poster}}"></div>
-          <div class='name'>{{films.Title}}
-              ({{films.Year}})</div>
+        <a ui-sref="reviews({id:'{{films.imdbid}}'})">
+          <div><img ng-src="{{films.poster}}"></div>
+          <div class='name'>{{films.title}}
+              ({{films.year}})</div>
         </a>
       </div>
     </div>
