@@ -14,11 +14,18 @@ angular.module('wezApp').controller('reviewsCtrl', function($scope, filmSvc, $st
     });
   };
 
+  $scope.getFilmReview = function(id){
+    filmSvc.getFilmReview(id).then(function(response){
+      $scope.review = response[0];
+      console.log($scope.review);
+    });
+  };
+
   $scope.getTrailer = function(id){
     filmSvc.getTrailer(id).then(function(response){
       console.log(response);
       var result = response.filter(function(response){
-        return response.type === 'Trailer' && response.name !== 'TV Spot';
+        return (response.type === 'Trailer' && response.name !== 'TV Spot') && (response.name !== 'Fan-made Trailer' && response.name !== 'VHS Trailer' && response.key !== 'pn1cbmFNjAM' && response.name !== 'Trailer 1') || response.key === 'kfIY0fNIJ3c';
       });
       console.log(result);
       $scope.trailer = 'https://www.youtube.com/embed/' + result[0].key;
@@ -30,4 +37,5 @@ angular.module('wezApp').controller('reviewsCtrl', function($scope, filmSvc, $st
 
   $scope.getTrailer(id);
 
+  $scope.getFilmReview(id);
 });

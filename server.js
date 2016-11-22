@@ -20,10 +20,15 @@ db.create_films(function(err, films){
 db.create_favorites(function(err, films){
   console.log('favs table init');
 });
+db.create_reviews(function(err, reviews){
+  console.log(err);
+  console.log('reviews table init');
+});
 
 app.get('/', controller.get_films);
 app.get('/library', controller.get_library);
 app.get('/favorites', controller.get_favorites);
+app.get('/:imdbid', controller.get_review);
 
 app.listen(3000, function(){
   console.log('listening on port 3000...');
