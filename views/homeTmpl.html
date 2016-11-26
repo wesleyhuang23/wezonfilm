@@ -3,16 +3,18 @@
     <div class="newest-fav">
       <h3>NEWEST FAVORITE</h3>
     </div>
-
-    <div class="new-fav">
+<a ui-sref="reviews({id:'{{newFav_detail.imdb_id}}'})">
+    <div class="new-fav" style="background-image: url('https://image.tmdb.org/t/p/original{{newFav_detail.backdrop_path}}')">
       <div id="gradient">
+
       </div>
       <!--<video src="videos/AFS PRESENTS_ MOUNTAINS MAY DEPART.mp4" type="video/mp4" autoplay="" muted="" loop="">
       </video>-->
-        <h3 id="play">MOUNTAINS MAY DEPART</h3>
+
+        <h3 id="play">{{newFav_detail.original_title}}</h3>
 
     </div>
-
+</a>
 
     <div class="reviews">
         <h3>Latest Reviews</h3>

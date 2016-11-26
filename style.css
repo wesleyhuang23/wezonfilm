@@ -103,7 +103,6 @@ h3{
 HOME VIEW
 ===========================*/
 .new-fav{
-  background-image: url('img/mountains-depart.jpg');
   background-size: cover;
   background-attachment: fixed;
   height: 83.5vh;
@@ -112,18 +111,17 @@ HOME VIEW
   justify-content: center;
   align-items: center;
   overflow: hidden;
-}
-.new-fav{
   font-size: 50px;
   font-weight: bold;
   color: white;
 }
 
 .new-fav h3{
-  position: absolute;
+  text-transform: uppercase;
   z-index: 2;
-    border: 5px solid white;
-    padding: 15px;
+  position: relative;
+  border: 5px solid white;
+  padding: 15px;
 }
 
 video{

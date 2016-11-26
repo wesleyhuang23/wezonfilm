@@ -33,6 +33,27 @@ this.getLibrary = function(){
   });
 };
 
+this.getNewFav = function(){
+  return $http({
+    method: 'GET',
+    url: 'http://localhost:3000/favorites'
+  }).then(function(response){
+    console.log(response.data);
+    return response.data;
+  })
+}
+
+this.getNewFav_detail = function(newFavId){
+  console.log(newFavId);
+  return $http({
+    method: 'GET',
+    url: 'https://api.themoviedb.org/3/movie/' + newFavId + '?api_key=8eecf03080f34edf303e14b5f1476653&language=en-US&append_to_response=undefined'
+  }).then(function(response){
+    console.log(response.data);
+    return response.data;
+  })
+}
+
   this.getTrailer = function(id){
     console.log('reached service');
     return $http({

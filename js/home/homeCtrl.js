@@ -14,6 +14,26 @@ $scope.getFilm = function(){
 });
 };
 
+var newFavId;
+
+$scope.getNewFav = function(){
+  filmSvc.getNewFav().then(function(response){
+    newFavId = response[0].imdbid;
+    console.log(newFavId);
+    $scope.getNewFav_detail(newFavId);
+  });
+}
+
+$scope.getNewFav_detail = function(newFavId){
+  console.log(newFavId);
+  filmSvc.getNewFav_detail(newFavId).then(function(response){
+    $scope.newFav_detail = response;
+    console.log($scope.newFav_detail);
+  });
+}
+
 $scope.getFilm();
+$scope.getNewFav();
+
 
 });
