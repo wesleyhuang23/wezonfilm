@@ -15,7 +15,7 @@ this.getFilm = function(){
     console.log('local get request reached');
     return $http({
       method: 'GET',
-      url: 'http://localhost:3000/'
+      url: '/'
     }).then(function(response){
       console.log(response.data);
       return response.data;

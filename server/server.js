@@ -2,12 +2,14 @@ var express = require('express');
 var bodyParser = require('body-parser');
 var cors = require('cors');
 var massive = require('massive');
-var connectionString = 'postges://wesleyhuang@localhost/wezonfilm';
+var connectionString = 'postgres://wesleyhuang@localhost/wezonfilm';
 
+var massiveInstance = massive.connectSync({connectionString : connectionString});
 var app = module.exports = express();
 app.use(cors());
 app.use(bodyParser.json());
-var massiveInstance = massive.connectSync({connectionString : connectionString});
+app.use(express.static(__dirname + './../public'));
+
 
 app.set('db', massiveInstance);
 var db = app.get('db');
@@ -21,7 +23,6 @@ db.create_favorites(function(err, films){
   console.log('favs table init');
 });
 db.create_reviews(function(err, reviews){
-  console.log(err);
   console.log('reviews table init');
 });
 

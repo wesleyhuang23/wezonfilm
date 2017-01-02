@@ -5,27 +5,27 @@ angular.module('wezApp', ['ui.router'])
 
   $stateProvider
   .state('home', {
-    templateUrl: 'views/homeTmpl.html',
+    templateUrl: './../views/homeTmpl.html',
     url: '/', //url for when you search in the bar
     controller: 'homeCtrl'
   })
   .state('library', {
-    templateUrl: 'views/libraryTmpl.html',
+    templateUrl: './../views/libraryTmpl.html',
     url: '/library',
     controller: 'filmCtrl'
   })
   .state('reviews', {
-    templateUrl: 'views/reviews.html',
+    templateUrl: './../views/reviews.html',
     url: '/reviews/:id',
     controller: 'reviewsCtrl'
   })
   .state('favorites',{
-    templateUrl: 'views/favorites.html',
+    templateUrl: './../views/favorites.html',
     url: '/favorites/',
     controller: 'favCtrl'
   })
   .state('contact', {
-    templateUrl: 'views/contact.html',
+    templateUrl: './../views/contact.html',
     url: '/contact'
   });
 

@@ -25,7 +25,7 @@ angular.module('wezApp').controller('reviewsCtrl', function($scope, filmSvc, $st
     filmSvc.getTrailer(id).then(function(response){
       console.log(response);
       var result = response.filter(function(response){
-        return (response.type === 'Trailer' && response.name !== 'TV Spot') && (response.name !== 'Fan-made Trailer' && response.name !== 'VHS Trailer' && response.key !== 'pn1cbmFNjAM' && response.name !== 'Trailer 1') || response.key === 'kfIY0fNIJ3c';
+        return (response.type === 'Trailer' && response.name !== 'TV Spot') && (response.name !== 'Fan-made Trailer' && response.name !== 'VHS Trailer' && response.key !== 'pn1cbmFNjAM' && response.name !== 'Trailer 1') || response.key === 'kfIY0fNIJ3c' || response.name === 'Trailer 1';
       });
       console.log(result);
       $scope.trailer = 'https://www.youtube.com/embed/' + result[0].key;

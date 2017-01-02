@@ -298,7 +298,15 @@ footer{
 }
 
 @media (max-width:946px){
-
+  .film-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .second-four{
+    position: relative;
+    right: 0;
+  }
 
   .reviewBody{
     position: relative;
