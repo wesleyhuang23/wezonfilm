@@ -26,7 +26,7 @@ db.create_reviews(function(err, reviews){
   console.log('reviews table init');
 });
 
-app.get('/', controller.get_films);
+app.get('/latest', controller.get_films);
 app.get('/library', controller.get_library);
 app.get('/favorites', controller.get_favorites);
 app.get('/:imdbid', controller.get_review);
