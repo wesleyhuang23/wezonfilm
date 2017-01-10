@@ -11,7 +11,7 @@ when users come to the site they will see what is the latest film that is my fav
 ![alt tag](https://github.com/wesleyhuang23/wezonfilm/blob/master/screenshots/review1.png)
 ![alt tag](https://github.com/wesleyhuang23/wezonfilm/blob/master/screenshots/review2.png)
 ![alt tag](https://github.com/wesleyhuang23/wezonfilm/blob/master/screenshots/review3.png)
-Clicking on a movie poster the user will be taken to the movie review page where there is a trailer and the review I wrote for the movie. As they scroll to the bottom there will be a simple movie info display. Users have the option to print the review with the print button. This is done, by using the imdb id that is given to the movie object.
+Clicking on a movie poster the user will be taken to the movie review page where there is a trailer and the review I wrote for the movie. As they scroll to the bottom there will be a simple movie info display. Users have the option to print the review with the print button. This is done, by using the movie id that is given to the movie object.
 
 # Library
 ![alt tag](https://github.com/wesleyhuang23/wezonfilm/blob/master/screenshots/library.png)
