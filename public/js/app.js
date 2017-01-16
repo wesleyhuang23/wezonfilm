@@ -27,6 +27,10 @@ angular.module('wezApp', ['ui.router'])
   .state('contact', {
     templateUrl: './../views/contact.html',
     url: '/contact'
+  })
+  .state('admin', {
+    templateUrl: './../views/admin.html',
+    url: '/admin'
   });
 
   $urlRouterProvider.otherwise('/');
