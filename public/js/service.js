@@ -108,5 +108,13 @@ this.getNewFav_detail = function(newFavId){
     });
 
   };
+  this.getMovies = function(term){
+    return $http({
+      method: 'GET',
+      url: 'http://www.omdbapi.com/?s=' + term
+    }).then(function(response){
+      return response.data.Search;
+    });
+  }
 
 });

@@ -368,6 +368,36 @@ LIBRARY VIEW
 /*===============
 library end
 ===============*/
+/*===============
+admin
+==============*/
+.search-admin{
+  border: 1px solid black;
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+}
+.movie-search-wrapper{
+  display: flex;
+  overflow: scroll;
+  margin: 20px;
+}
+
+.movie-search{
+  display: inline-block;
+  margin: 5px;
+}
+.movie-search img{
+  height: 200px;
+}
+.movie-search p{
+  font-size: 10px;
+  text-align: center;
+}
+.movie-search-container{
+  display: flex;
+  flex-direction: column;
+}
 
 /*================
 contact view
