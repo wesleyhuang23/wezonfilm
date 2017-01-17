@@ -5,14 +5,16 @@
     <input type="text" ng-model="term"><div class="search-admin" ng-click="getMovies(term)">search</div>
     <div class="movie-search-wrapper">
     <div class="movie-search" ng-repeat="movie in movies">
-        <div class="movie-search-container">
+        <!--<div class="movie-search-container">
             <img src="{{movie.Poster}}"/>
             <p>{{movie.Title}}({{movie.Year}})</p>
             <div class="search-admin">add</div>
-        </div>
+        </div>-->
+        <movie-card></movie-card>
     </div>
     </div>
     <h2>Favorites</h2>
     <input type="text"><div>search</div>
+    
 
 </section>

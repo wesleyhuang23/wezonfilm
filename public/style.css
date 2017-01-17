@@ -377,6 +377,9 @@ admin
   display: inline-block;
   text-align: center;
 }
+.search-admin:hover{
+  background-color: yellow;
+}
 .movie-search-wrapper{
   display: flex;
   overflow: scroll;
