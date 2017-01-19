@@ -392,6 +392,7 @@ admin
 }
 .movie-search img{
   height: 200px;
+  width: 150px;
 }
 .movie-search p{
   font-size: 10px;
