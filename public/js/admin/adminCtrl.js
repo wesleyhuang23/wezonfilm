@@ -14,5 +14,6 @@ angular.module('wezApp').controller('adminCtrl', function($scope, filmSvc){
             $scope.favorites = response;
         });
     }
+    
 
 });

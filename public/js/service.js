@@ -118,4 +118,15 @@ this.getNewFav_detail = function(newFavId){
     });
   }
 
+  //DATABASE STUFF
+  this.addToLibrary = function(film){
+    return $http({
+      method: 'POST',
+      url: '/library',
+      data: film
+    }).then(function(response){
+      return response;
+    });
+  }
+
 });
