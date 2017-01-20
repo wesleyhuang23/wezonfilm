@@ -109,6 +109,7 @@ this.getNewFav_detail = function(newFavId){
 
   };
   this.getMovies = function(term){
+    console.log('service term', term);
     return $http({
       method: 'GET',
       url: 'http://www.omdbapi.com/?s=' + term

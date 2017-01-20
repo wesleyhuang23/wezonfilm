@@ -2,11 +2,11 @@ angular.module('movieCardDirective', []).directive('movieCard', function(){
     return {
         restrict: 'E',
         scope: {
-            movie: '='
+            film: '='
         },
         templateUrl: './js/admin/contactCard.html',
         controller: function($scope){
-            console.log($scope.movie);
+            console.log($scope.film);
         }
     }
 })

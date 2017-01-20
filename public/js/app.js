@@ -1,5 +1,5 @@
 
-angular.module('wezApp', ['ui.router', 'movieCardDirective'])
+angular.module('wezApp', ['ui.router', 'movieCardDirective', 'favoriteCardDirective'])
 
 .config(function($urlRouterProvider, $stateProvider){
 

@@ -376,6 +376,7 @@ admin
   cursor: pointer;
   display: inline-block;
   text-align: center;
+  width: 133.33px;
 }
 .search-admin:hover{
   background-color: yellow;
@@ -392,11 +393,13 @@ admin
 }
 .movie-search img{
   height: 200px;
-  width: 150px;
+  width: 133.33px;
 }
 .movie-search p{
   font-size: 10px;
   text-align: center;
+  position: relative;
+  width: 133.33px;
 }
 .movie-search-container{
   display: flex;
