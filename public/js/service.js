@@ -128,5 +128,14 @@ this.getNewFav_detail = function(newFavId){
       return response;
     });
   }
+  this.addToFav = function(film){
+    return $http({
+      method: 'POST',
+      url: '/favorites',
+      data: film
+    }).then(function(response){
+      return response;
+    });
+  }
 
 });

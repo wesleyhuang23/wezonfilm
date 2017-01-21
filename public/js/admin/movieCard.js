@@ -11,7 +11,7 @@ angular.module('movieCardDirective', []).directive('movieCard', function(){
         $scope.addToLibrary = function(film){
                 console.log('film', film);
                 filmSvc.addToLibrary(film).then(function(response){
-                    console.log('added to favorites');
+                    console.log('added to library');
                 });
             }
         }

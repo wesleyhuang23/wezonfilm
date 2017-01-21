@@ -32,6 +32,7 @@ app.get('/favorites', controller.get_favorites);
 app.get('/:imdbid', controller.get_review);
 
 app.post('/library', controller.add_to_library);
+app.post('/favorites', controller.add_to_favorites);
 
 app.listen(3000, function(){
   console.log('listening on port 3000...');
